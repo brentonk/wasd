@@ -1,0 +1,156 @@
+---
+title: "War and State Development"
+subtitle: "PSCI 2227, Vanderbilt University, Spring 2026"
+author: "Professor Brenton Kenkel"
+bibliography: references.bib
+format:
+  html: default
+  pdf:
+    colorlinks: true
+    fontsize: 12pt
+  gfm:
+    output-file: README.md
+    shift-heading-level-by: 1
+---
+
+
+"War made the state, and the state made war."  
+---Charles Tilly, 1975
+
+In this course, we will examine how war has affected the development of major political and economic institutions.
+We will work through theoretical models of war’s role in state development, and we will use historical and statistical evidence to evaluate the explanatory power of these models.
+
+Some key challenges will arise repeatedly throughout the semester.
+How can we establish cause-and-effect relationships when we cannot run randomized experiments and must rely solely on historical evidence?
+And even if we establish that war shaped a specific institutional development in a specific state, how much can we generalize to other times and places?
+We will learn how to address questions like these.
+
+
+# General information
+
+**Place and time.**
+We meet on Mondays and Wednesdays from 2:20--3:45 in Alumni Hall 201.
+
+**Contact.**
+You can email me at <brenton.kenkel@gmail.com>.
+I try to respond to all student questions within one business day.
+
+**Office hours and meetings.**
+My office hours are on Tuesdays from 2:00--3:30pm in Commons Center 326.
+You don't need to make an appointment --- just show up during my office hours.
+If you have a question but can't meet during my office hours, email me first.
+From there we can decide if we can work out the issue over email or if we need to meet.
+
+**Teaching assistant.**
+The TA for War and State Development is Seungho Song.
+You can email him at <seung.ho.song@vanderbilt.edu>.
+His office hours are on Fridays from 1:00--2:30pm (location TBA).
+
+
+# Grading
+
+**Daily reading quizzes (20%).**
+Each class session will begin with a brief quiz about the content of that day's readings.
+These quizzes are designed to ensure you have absorbed the main argument of the readings --- no trivia or gotcha questions.
+Your four lowest quiz scores, including any quizzes that you miss, will be dropped before calculating your final grade.
+
+**Exams (15% midterm, 20% final).**
+There will be an in-class midterm and final exam.
+Each exam will be evenly divided between short answer questions and a longer-format essay.
+Exams are open-notes, but you will need to print those notes --- no electronic devices during exams.
+The final exam will be cumulative.
+
+**Research project (5% proposal, 15% first draft, 25% final draft).**
+Outside of class, you will complete a research project that advances a theoretical argument about the effects of warfare on some aspect of state development, then uses historical evidence to test that argument.
+The theoretical argument may (and in fact should) draw on the course readings, but should also be a product of your own original thought.
+The empirical test should take one of the following forms:
+
+- *Process tracing.*
+  Focus on a single historical case.
+  Evaluate not only whether the theoretical predictions are borne out, but also whether there is direct evidence for the precise causal mechanisms underlying the theory.
+
+- *Case comparison.*
+  Focus on a small number (2--4) of historical cases that differ in the extent or nature of the state's involvement in warfare.
+  Evaluate whether the theoretical predictions are borne out, and whether the theory provides the best explanation of differences in developments across the cases.
+
+- *Quantitative data analysis.*
+  Follow the logic of the theory to yield a couple of hypotheses that can be tested at scale.
+  Obtain systematic data on a larger number of historical cases, then perform statistical tests to evaluate the hypotheses.
+  You can only choose this option if you have taken (or are taking) PSCI 2270, PSCI 2300, PSCI 2301, or a similar quantitative methods course providing the necessary background in data wrangling and statistical analysis.
+
+On February 13, you will turn in a 2--3 page [proposal]{.underline} for the research project.
+This proposal will outline the theoretical argument you intend to advance, the method of testing you intend to employ (including the selection of cases/data), and a list of sources you plan to consult in your research.
+
+On March 20, you will turn in a complete [first draft]{.underline} of the final research project.
+This draft will be graded along with detailed feedback, including specific suggestions for changes and additions to make in the final version.
+
+The [final draft]{.underline}, due April 17, should be roughly 15 pages, though there is no hard lower or upper bound.
+You will turn this in alongside a memo summarizing the changes you have made since the first draft, giving specific details on how you have incorporated or responded to the suggested changes.
+The paper itself will count for 20% of your course grade, and the accompanying memo will count for 5%.
+
+You may use generative AI tools like ChatGPT however you please in conducting each stage of the research project.
+I suspect that if you try to just have AI write the entire paper for you, it will make things up and it will make weak arguments, and you will not do well on the assignment.
+We will spend some time talking in class about better and worse uses of generative AI when conducting social science research.
+
+**Extra credit.**
+There will be two opportunities for extra credit.
+One will involve your personal participation in a research study with the RIPS Lab.
+The other will involve collective participation in the end-of-semester course evaluations.
+I will tell you more about these at the appropriate times.
+
+
+# Schedule
+
+All readings will be available on Brightspace.
+For each reading, I'll provide a reading guide with questions to help walk you through the reading and extract the most important information.
+
+| Topic | Date | Reading |
+|-------|------|---------|
+| Intro to the course | Mon Jan 5 | No readings |
+| | | |
+| The sovereign state | Wed Jan 7 | @spruyt1994institutional |
+| | Mon Jan 12 | @olson1993dictatorship |
+| | Wed Jan 14 | @sanchez2020origins |
+| | Mon Jan 19 | *No class --- MLK Day* |
+| | | |
+| Territorial control | Wed Jan 21 | @tilly1990coercion, ch. 3 |
+| | Mon Jan 26 | @abramson2017economic |
+| | Wed Jan 28 | @thies2005war |
+| | Mon Feb 2 | @dincecco2018violent |
+| | Wed Feb 4 | @henn2025africa |
+| | | |
+| Raising revenue | Mon Feb 9 | @levi1988rule, ch. 2 |
+| | Wed Feb 11 | @karaman2013different |
+| | Fri Feb 13 | **Research proposal due** |
+| | Mon Feb 16 | @queralt2019war |
+| | | |
+| | Wed Feb 18 | Catch up/midterm review |
+| | Mon Feb 23 | **Midterm exam** |
+| | | |
+| Parliaments | Wed Feb 25 | @kenkel2023theory |
+| | Mon Mar 2 | @cox2023window |
+| | Wed Mar 4 | @becker2020wars |
+| | | |
+| | Mon Mar 9 | *No class --- spring break* |
+| | Wed Mar 11 | *No class --- spring break* |
+| | | |
+| Democratization | Mon Mar 16 | @acemoglu2000did |
+| | Wed Mar 18 | @przeworski2009conquered |
+| | Fri Mar 20 | **First draft of research paper due** |
+| | Mon Mar 23 | @blattman2009violence |
+| | | |
+| Nationalism | Wed Mar 25 | @anderson1983imagined, ch. 1-2 |
+| | Mon Mar 30 | @sambanis2015nation |
+| | Wed Apr 1 | @rozenas2017political |
+| | Mon Apr 6 | @darden2016threats |
+| | | |
+| Bureaucracy | Wed Apr 8 | @brewer1988sinews, ch. 3-4 |
+| | Mon Apr 13 | @voth2022discretion |
+| | Wed Apr 15 | @chen2023state |
+| | | |
+| | Fri Apr 17 | **Final research paper + revision memo due** |
+| | Mon Apr 20 | Catch up/final review |
+| | Thur Apr 23 | **Final exam** |
+
+
+# References

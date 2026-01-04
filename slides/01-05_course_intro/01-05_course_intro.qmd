@@ -1,0 +1,262 @@
+---
+title: Introduction to the course
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-01-05
+---
+
+
+## Agenda for today
+
+- Introductions
+
+- Learn a bit about the course topics
+
+- Talk through assignments, grading, and other syllabus stuff
+
+- Answer any and all lingering questions
+
+
+# Introductions
+
+## This course
+
+PSCI 2227: War and State Development
+
+Mondays and Wednesdays, 2:20--3:45pm, Alumni Hall 201
+
+First time this is being taught at Vanderbilt!
+
+Counts for international relations [or]{.underline} comparative politics in PSCI major
+
+## About me
+
+*   "Kenkel" rhymes with "sprinkle" 🧁
+*   Grew up in Northern Kentucky, near Cincinnati
+*   Philosophy and political science major at University of Kentucky (2008)
+*   PhD in political science from University of Rochester (2014)
+*   On the Vanderbilt faculty since 2014
+*   Research + classes on international relations, game theory, statistics
+
+Email: <brenton.kenkel@gmail.com> (preferred over Vanderbilt email)
+
+Office hours: Tuesday 2-3:30pm, Commons 326, no appointment needed
+
+<!--
+## About the TA
+
+**WRITE THIS**
+-->
+
+
+# War and state development
+
+## Three important patterns in Europe
+
+In the second half of the last millenium...
+
+1. Europe went from **hundreds** of (mostly) small states to about 30 big ones
+2. The **capacity** of these states rose dramatically
+    - They raise a lot more revenue
+    - They provide many more services
+    - Their governments are much more representative of all citizens
+3. In the meantime, these states fought **many wars** against each other
+
+## 1. Consolidation
+
+Europe in 1500:
+
+![](https://www.euratlas.net/history/europe/1500/1500.jpg){fig-align="center"}
+
+## 1. Consolidation {visibility="uncounted"}
+
+Europe in 1900:
+
+![](https://www.euratlas.net/history/europe/1900/1900.jpg){fig-align="center"}
+
+## 2. Capacity
+
+![](dincecco_fig_5.3.png){fig-align="center"}
+
+::: {.aside}
+Source: Mark Dincecco, *Political Transformations and Public Finances*
+:::
+
+## 3. War
+
+Major wars in Europe, 1500--1900:
+
+| War | Dates | Deaths | % of Pop. |
+|-----|-------|--------|-----------|
+| Italian Wars | 1494–1559 | 300,000–400,000 | ~0.5% |
+| French Wars of Religion | 1562–1598 | 2–4 million | 2.5–5% |
+| Eighty Years' War | 1568–1648 | 600,000–700,000 | ~0.7% |
+| Thirty Years' War | 1618–1648 | 4.5–8 million | 5–8% |
+| War of the Spanish Succession | 1701–1714 | 400,000–1.2 million | 0.4–1.1% |
+| War of the Austrian Succession | 1740–1748 | 400,000–500,000 | ~0.4% |
+| Seven Years' War | 1756–1763 | 900,000–1.4 million | 0.6–1% |
+| French Revolutionary Wars | 1792–1802 | 600,000–1.5 million | 0.3–0.8% |
+| Napoleonic Wars | 1803–1815 | 3.5–6.5 million | 2–3.5% |
+| Crimean War | 1853–1856 | 600,000–750,000 | ~0.2% |
+| Franco-Prussian War | 1870–1871 | 180,000–200,000 | ~0.06% |
+
+: {tbl-colwidths="[35, 20, 25, 15]"}
+
+## Questions we'll be asking
+
+To what extent did all these wars [cause]{.underline} territorial consolidation?
+
+. . .
+
+And to what extent did they cause subsequent increases in...
+
+- tax revenue?
+- public representation?
+- national identity?
+- bureaucracy?
+
+. . .
+
+How special was Europe?
+Do we also see these patterns in the Americas, Asia, and Africa?
+
+## Methods of inquiry
+
+**Theory.**
+Can we construct [logically coherent]{.underline} explanations for why warfare would affect state consolidation and development?
+
+. . .
+
+**History.**
+When we [look closely]{.underline} at how individual states developed, how much do the facts line up with the theoretical logic?
+What events do the theories explain poorly?
+
+. . .
+
+**Statistics.**
+Do the [broad patterns]{.underline} in data on state development match up with what our theories would predict?
+Which patterns do the theories explain poorly?
+
+
+# The syllabus
+
+## Overview of grading
+
+- 20% daily reading quizzes
+  - Lowest four scores (incl. absences) are dropped
+
+. . .
+
+- 15% midterm exam (in class on Monday, February 23)
+
+. . .
+
+- 20% final exam (9:00am on Thursday, April 23)
+  - Date set by College, not changeable or negotiable
+
+. . .
+
+- 45% research project
+  - 5% proposal due February 13
+  - 15% first draft due March 20
+  - 25% final paper + revision memo due April 17
+
+. . .
+
+Two extra credit opportunities: RIPS Lab, course evals
+
+## Daily readings + quizzes
+
+One article/book chapter per class
+
+Reading guides posted on Brightspace and <https://bkenkel.com/wasd>
+
+Five-minute reading quiz at start of each class
+
+- Single short answer question
+- Covers central topics of reading, no trivia or "gotchas"
+- Grades: Full credit (100%), partial credit (75%), no credit (0%)
+- Four lowest scores dropped from final average
+
+No "attendance policy," but reading quizzes must be taken in person
+
+- You can walk out right after --- not recommended, but won't affect grade
+
+## Exams
+
+Midterm on February 23, final on April 23
+
+Split between short answers and 1--2 longer essays (1 on midterm, 2 on final)
+
+Open notes, but no electronic devices
+
+Final is cumulative, but will mostly cover post-midterm content
+
+## Research project: Overview
+
+Central aims of the project
+
+1. Make an argument about how war affects an aspect of state development
+2. Use historical evidence to test that argument
+
+Start thinking about potential topics **from day one**
+
+Don't be shy to email me or drop by office hours to talk about topics!
+
+No formal restrictions on ChatGPT/AI usage
+
+- Probably not a good idea to have it write the whole thing for you
+- We'll talk repeatedly in class about smarter/dumber uses of AI for research
+
+## Research project: Specifics
+
+1. Proposal due February 13 (5% of final grade)
+   - 2--3 pages
+   - Preview your argument, discuss historical cases you plan to study
+   - List sources you plan to consult
+2. First draft due March 20 (15%)
+   - Complete draft of paper, 15ish pages
+   - I will give you **detailed** feedback for final draft
+3. Final draft and revision memo due April 17
+   - Revision memo will detail changes since first draft
+   - Paper itself is 20% of final grade, memo is 5%
+
+## A final project and a final paper... wtf   
+
+Why would I make you do this? Is it sheer pedagogical cruelty?
+
+- Exams test the **breadth** of your knowledge of the course topics
+- Final project will have you go in **depth** on a single topic you care about
+- Both are important!
+
+The requirements aren't as backloaded as you might fear
+
+- The real "hard part" for the project is the first draft due March 20
+- Feedback from there will give a clear path for the final paper
+
+# Any more syllabus questions?
+
+## Next time
+
+**Topic:** The not-so-inevitable development of sovereign states
+
+- What do we mean by the "state" in "state development"?
+- What other forms of political organization could have prevailed instead?
+
+**Reading:** Spruyt 1994, "Institutional Selection in International Relations"
+
+- Reading quiz will be given for practice only (not graded)
+- First graded reading quiz will be next Monday, January 12
+
+**One more thing:**
+
+- Please fill out pre-course survey via link on Brightspace

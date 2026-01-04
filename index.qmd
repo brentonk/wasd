@@ -1,0 +1,20 @@
+---
+title: "War and State Development"
+subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University"
+---
+
+## Reading Guides
+
+| Date | Reading |
+|------|---------|
+| Wednesday, January 7, 2026 | [Spruyt 1994, 'Institutional Selection in International Relations: State Anarchy as Order'](guides/spruyt1994institutional.html) |
+
+: {tbl-colwidths="[30, 70]"}
+
+## Lecture Slides
+
+| Date | Topic |
+|------|-------|
+| Monday, January 5, 2026 | [Introduction to the course](slides/01-05_course_intro/01-05_course_intro.html){target="_blank"} |
+
+: {tbl-colwidths="[30, 70]"}

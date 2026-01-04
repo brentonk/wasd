@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "guides/*.qmd"
+    - "!slides/"
+  resources:
+    - slides/**
+
+website:
+  title: "War and State Development"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: syllabus_2026_spring.qmd
+        text: Syllabus
+
+format:
+  html:
+    theme:
+      - lumen
+      - wasd.scss
+    monofont: 'Iosevka Web'
+    linestretch: 1.6
