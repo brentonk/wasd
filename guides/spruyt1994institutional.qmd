@@ -7,7 +7,9 @@ date: 2026-01-07
 
 We won't be concerned with the particulars of new institutional history (abbreviated to NIH through most of the article) and historical sociology.
 Focus on the specific claims and evidence about the emergence, persistence, and extinction of different types of political organization in Europe.
-(In practice, this means you can skip over the subsections "The deductive perspective of new institutionalism" and "Some problems with new institutionalism" on pages 530--533. The exception would be to read the paragraph that spans 531--532 if you need or want a refresher on free-riding and credible commitment.)
+
+- In practice, this means you can skip over the subsections "The deductive perspective of new institutionalism" and "Some problems with new institutionalism" on pages 530--533.
+- The exception would be to read the paragraph that spans 531--532 if you need or want a refresher on free-riding and credible commitment.
 
 When Spruyt refers to "the end of the feudal era," he's talking about the early 1300s.
 
