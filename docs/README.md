@@ -33,7 +33,7 @@ we can work out the issue over email or if we need to meet.
 
 **Teaching assistant.** The TA for War and State Development is Seungho
 Song. You can email him at <seung.ho.song@vanderbilt.edu>. His office
-hours are on Fridays from 1:00–2:30pm (location TBA).
+hours are on Fridays from 3:00–4:30pm in Commons 317.
 
 ## Grading
 
