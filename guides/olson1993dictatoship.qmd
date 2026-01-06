@@ -1,0 +1,32 @@
+---
+title: "Olson 1993, 'Dictatorship, Democracy, and Development'"
+date: 2026-01-12
+---
+
+# Notes
+
+Olson frequently makes references to historical figures or events that you may not be familiar with, like [Imelda Marcos](https://en.wikipedia.org/wiki/Imelda_Marcos) on page 569 or the [Glorious Revolution](https://en.wikipedia.org/wiki/Glorious_Revolution) on page 574.
+You don't need to understand every single one of these references to get the gist of what Olson is arguing.
+But you'll get more out of reading the article if, when you run into some unfamiliar proper noun, you head to Wikipedia or your favorite generative AI model to fill in the gaps.
+
+
+# Questions
+
+Olson predicts that there will be "little or no [economic] production in the absence of a peaceful order." Why?
+
+How are a "roving bandit" and a "stationary bandit" different, according to Olson?  How are they similar?
+
+The key question in Olson's analysis is "Why should warlords, who were stationary bandits continuously stealing from a given group of victims, by preferred, by those victims, to roving bandits who soon departed?"
+What is the core of his answer to his question?
+
+In what sense is a centralized, territorial state like a "stationary bandit"?
+
+How does Olson's account of the rise of early territorial states differ from a "social contract" theory, where governments are thought of as the outcome of a process of voluntary agreement among citizens?
+
+Olson claims that democracies will have better economic performance than dictatorships, even if democratic leaders are just as greedy and self-interested as dictators are.  What's the logic behind this claim?
+
+What is a "time horizon," and how does it affect the way a stationary bandit will treat their subjects?
+
+Olson argues that autocratic rule will be bad for ordinary people in a country, at least compared to democracy, but that this alone is not a reason to assume the people will rise up to overthrow a dictatorship in favor of democracy.  Why?
+
+Imagine a situation where a dictator has been overthrown.  What conditions, according to Olson, will lead to the establishment of democratic rule rather than a dictatorship by whoever overthrew the old dictator?

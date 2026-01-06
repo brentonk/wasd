@@ -27,6 +27,12 @@ slides_table=""
 for qmd in slides/*/*.qmd; do
     [ -f "$qmd" ] || continue
 
+    # Skip subdirectories starting with "draft"
+    dir=$(dirname "$qmd" | xargs basename)
+    if [[ "$dir" == draft* ]]; then
+        continue
+    fi
+
     # Extract title and date from YAML front matter
     title=$(grep -m1 "^title:" "$qmd" | sed 's/^title: *//' | tr -d '"')
     date=$(grep -m1 "^date:" "$qmd" | sed 's/^date: *//')
