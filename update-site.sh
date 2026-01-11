@@ -37,11 +37,18 @@ for qmd in slides/*/*.qmd; do
     title=$(grep -m1 "^title:" "$qmd" | sed 's/^title: *//' | tr -d '"')
     date=$(grep -m1 "^date:" "$qmd" | sed 's/^date: *//')
 
+    # Check for display-date override (for multi-day slides)
+    display_date=$(grep -m1 "^display-date:" "$qmd" | sed 's/^display-date: *//' | tr -d '"')
+
     # Get the HTML path (same name as qmd but .html)
     html_path="${qmd%.qmd}.html"
 
-    # Format date for display (YYYY-MM-DD -> Day, Month D, YYYY)
-    formatted_date=$(date -d "$date" "+%A, %B %-d, %Y" 2>/dev/null || echo "$date")
+    # Use display-date if set, otherwise format the date
+    if [ -n "$display_date" ]; then
+        formatted_date="$display_date"
+    else
+        formatted_date=$(date -d "$date" "+%A, %B %-d, %Y" 2>/dev/null || echo "$date")
+    fi
 
     # Store with sortable date prefix for sorting
     slides_table+="$date|$formatted_date|$title|$html_path\n"

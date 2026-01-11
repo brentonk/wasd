@@ -1,0 +1,202 @@
+---
+title: Roving and stationary bandits
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    chalkboard: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-01-12
+display-date: "Monday, January 12, 2026 and Wednesday, January 14, 2026"
+---
+
+
+## Approaching the readings
+
+Some advice if you're struggling with the readings
+
+- Don't try to absorb/memorize every detail from every page
+- Two main things to extract from every reading
+  1. What is the [central argument]{.alert} the author is making?
+  2. What are the [main pieces of evidence]{.alert} they use to back it up?
+- Look through the reading guide before starting the reading
+- If you're still struggling through it
+  - Email <brenton.kenkel@gmail.com> and/or <seung.ho.song@vanderbilt.edu> --- we're here to help!
+  - Ask your favorite chatbot (see next slide)
+
+## Getting AI help on readings  
+
+Better than emailing us if --- and only if --- you want **instant** answers
+
+Some tips based on my experience:
+
+- Start a new chat for each different reading (avoid [context rot](https://jameshoward.us/2024/11/26/context-degradation-syndrome-when-large-language-models-lose-the-plot))
+- Upload the PDF alongside your question
+- Use the best models
+  - Claude Opus 4.5 is best in class
+  - ChatGPT 5.2 also very good, on <https://vanderbilt.ai> or ChatGPT Edu
+- Ask directed questions
+  - Worse: "What is this article about?"
+  - Better: "What does he mean when he says sufficiently small groups can often organize for collective action?"
+
+
+## Recap
+
+Weber's **definition of the state**:
+
+> A human community that successfully claims the monopoly of the legitimate use of physical force within a given territory.  
+
+Spruyt's findings on the **territorial state's rise** in Europe:
+
+- Rise in trade $\leadsto$ feudalism not viable economically
+- Various competitors arose: territorial states, city-states, city-leagues
+- Territorial states won out due to economic + diplomatic advantages
+
+## Today's agenda
+
+The puzzle of **state formation** --- how does a territorial state come into existence in the first place?
+
+1. Why the "social contract" theory is implausible
+2. Olson's metaphor of the state as a stationary bandit
+   - Transition from roving to stationary banditry
+   - The surprising benefits of stationary bandit rule
+3. Sánchez de la Sierra's evidence for Olson's theory
+
+
+# Social contracts and the logic of collective action
+
+## Social contract theory
+
+::: {.columns}
+:::: {.column}
+::::: {style="font-size: 90%; border: 2px solid black; padding: 0.4em; border-radius: 5px;"}
+"persons are primarily self-interested, and ... a rational assessment of the best strategy for attaining the maximization of their self-interest will lead them to act morally ... and to consent to governmental authority."<br>
+---[Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/contractarianism/)
+:::::
+
+Government provides defense from bandits, warlords, predators --- necessary for any economy
+
+All better off w/ government $\leadsto$ given the chance, we'd opt into having one
+::::
+:::: {.column}
+![Thomas Hobbes, *Leviathan*, original frontispiece](leviathan.jpg){width="70%" fig-align="center"}
+::::
+:::
+
+## Social contract theory: Justification ≠ explanation
+
+::: {.columns}
+:::: {.column}
+![U.S. Declaration of Independence](declaration.jpg){fig-align="center"}
+::::
+:::: {.column}
+The "social contract" is a device to **justify** a monopoly of violence, not explain its existence
+
+Of course you and I never signed a contract!
+
+Not only because our countries were born before we were --- it's just not how states came about
+
+Olson goes further: large states **can't** be explained as result of a contract
+::::
+:::
+
+## Collective action and statehood
+
+Key features of a collective action problem
+
+- Success requires individual contributions
+- If successful, the whole group benefits, even non-contributors
+
+Examples: charity drives, protests, voting, overfishing/overhunting, carbon emissions reduction, arms races, many many many more
+
+. . .
+
+State formation as a collective action problem
+
+- All in society benefit from defense + rule of law
+- But there are individual costs to provide these
+  - Paying taxes, or otherwise providing public services
+  - Giving up own means of violence
+
+## The group size paradox
+
+Bigger group $\leadsto$ bigger total benefit from collective action
+
+Yet large groups have a [harder]{.underline} time succeeding
+
+- You and your roommates can probably keep stinky food out of your fridge
+- But the world's governments haven't been able to stop global warming
+
+. . .
+
+The **free-rider** problem is severe in large groups
+
+- Helping provide a public good is costly to me no matter what
+- But the chance that my effort makes a difference is minuscule in a very large population
+
+::: {.aside}
+This famous argument was developed by Mancur Olson --- yes, the same Olson --- in his 1965 book *The Logic of Collective Action*.
+:::
+
+## Solving the collective action problem
+
+So how can we ever get collective action to work in large groups?
+
+::: {.columns}
+:::: {.column .fragment}
+**1\.  Selective benefits**
+
+![(Associated Press)](i_voted.webp){fig-align="center" width="60%"}
+
+Offer a "bonus" to contributors<br>
+... or a punishment for free-riders
+
+(costly + requires monitoring)
+::::
+:::: {.column .fragment}
+**2\.  Via a hegemon/monopolist**
+
+![(American Action Forum)](nato.png){fig-align="center" width="60%"}
+
+One actor takes on the costs --- and reaps the biggest share of the benefits
+::::
+:::
+
+## The puzzle of statehood
+
+Governing a large state is very costly --- huge collective action problem
+
+Unlikely to solve the problem via selective incentives
+
+- Who has the resources to know who contributed, who didn't?
+- Who has the power to effectively punish non-contributors?
+
+. . .
+
+But then who is going to step in and take on all the costs of establishing a state?
+
+And once they do, what's to stop them from stealing everything from the subjects under their control?
+
+. . .
+
+Olson's answer: incentives are right for a **stationary bandit**
+
+
+# Remaining slides TBA
+
+Will be up by Weds 1/14!
+
+
+<!--
+# Wrapping up
+
+## What we did today
+
+## To do for next time
+-->
