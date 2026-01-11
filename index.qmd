@@ -9,6 +9,7 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 |------|---------|
 | Wednesday, January 7, 2026 | [Spruyt 1994, 'Institutional Selection in International Relations: State Anarchy as Order'](guides/spruyt1994institutional.html) |
 | Monday, January 12, 2026 | [Olson 1993, 'Dictatorship, Democracy, and Development'](guides/olson1993dictatoship.html) |
+| Wednesday, January 14, 2026 | [Sánchez de la Sierra 2020, 'On the Origins of the State'](guides/sanchez2020origins.html) |
 
 : {tbl-colwidths="[30, 70]"}
 
