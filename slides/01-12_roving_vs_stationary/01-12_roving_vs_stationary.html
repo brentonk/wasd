@@ -151,6 +151,21 @@ Prof.&nbsp;Brenton Kenkel
 </section>
 <section id="approaching-the-readings" class="slide level2">
 <h2>Approaching the readings</h2>
+<style>
+.cell-green {
+  background-color: green;
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.cell-red {
+  background-color: red;
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+</style>
 <p>Some advice if you’re struggling with the readings</p>
 <ul>
 <li>Don’t try to absorb/memorize every detail from every page</li>
@@ -332,18 +347,342 @@ Prof.&nbsp;Brenton Kenkel
 <p>Olson’s answer: incentives are right for a <strong>stationary bandit</strong></p>
 </div>
 </section></section>
-<section id="remaining-slides-tba" class="title-slide slide level1 center">
-<h1>Remaining slides TBA</h1>
-<p>Will be up by Weds 1/14!</p>
-<!--
-# Wrapping up
-
-## What we did today
-
-## To do for next time
--->
+<section>
+<section id="a-predatory-theory-of-statehood" class="title-slide slide level1 center">
+<h1>A predatory theory of statehood</h1>
 
 </section>
+<section id="states-of-anarchy" class="slide level2">
+<h2>States of anarchy</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="http://multiversitystatic.s3.amazonaws.com/uploads/2015/08/One-Piece-Golden-Age.jpg" style="width:70.0%"></p>
+<figcaption><em>One Piece</em>, ch.&nbsp;1</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<p><strong>Anarchy:</strong> no centralized authority to provide security or enforce contracts</p>
+<p>World of “self help” — must provide own defense/enforcement</p>
+<p>Examples</p>
+<ul>
+<li>Prehistorical humanity</li>
+<li>Caribbean pirate era, 1650–1730</li>
+<li>China’s Warlord Era, 1916–1928</li>
+<li>Somalia, 1991–2012 (or longer)</li>
+<li>Eastern DRC, 1990s–present</li>
+</ul>
+</div></div>
+</section>
+<section id="roving-bandits" class="slide level2">
+<h2>Roving bandits</h2>
+<p>An old question — in a “state of nature” (anarchy), will we all be nice to each other, or all kill each other?</p>
+<p>More realistic premise: <u>some</u> people will predate upon others</p>
+<div class="fragment">
+<p>Characteristics of the <strong>roving bandit</strong></p>
+<ul>
+<li>Does not produce economically valuable goods</li>
+<li>Lives by stealing production from others</li>
+<li>“Invests” in means of theft: arms, horses, cronies</li>
+<li>Opportunistic — finds a chance to steal the most value facing the least resistance, then moves on to a new target</li>
+<li>Essentially a parasite on the economy</li>
+</ul>
+</div>
+</section>
+<section id="roving-banditry-and-economic-incentives" class="slide level2">
+<h2>Roving banditry and economic incentives</h2>
+<p>A very simple model of the human economy</p>
+<ul>
+<li>People choose how much time/effort to spend laboring</li>
+<li>Labor produces output, which people divide between…
+<ul>
+<li>Consumption, including subsistence (bare minimum to stay alive)</li>
+<li>Investment, raising future labor productivity</li>
+<li>Defense, protecting consumption + investment from predation</li>
+</ul></li>
+<li>Goal is to maximize lifetime consumption, minus labor costs</li>
+</ul>
+<div class="fragment">
+<p><strong>Discuss with your neighbors:</strong> What does the balance of labor look like in a world without bandits? As the frequency and threat of banditry increases, how does this balance change?</p>
+</div>
+</section>
+<section id="roving-banditry-is-even-bad-for-the-bandits" class="slide level2">
+<h2>Roving banditry is even bad for the bandits</h2>
+<p>Little incentive for a roving bandit to limit their predation</p>
+<ul>
+<li>If you don’t steal it today, someone else will tomorrow</li>
+<li>Only limiting factor is retaliation from the targets</li>
+</ul>
+<div class="fragment">
+<p><span class="math inline">\(\leadsto\)</span> little incentive to produce/invest above subsistence line</p>
+<ul>
+<li>Going to lose it all to a bandit eventually</li>
+<li>Surplus should go to defense, or just leisure</li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\leadsto\)</span> leaving relatively little for the roving bandits to take!</p>
+</div>
+</section>
+<section id="from-roving-to-stationary-banditry" class="slide level2">
+<h2>From roving to stationary banditry</h2>
+<p>Olson’s claim: expect a <strong>stationary bandit</strong> to emerge from anarchy</p>
+<p>Key features of a stationary bandit</p>
+<ul>
+<li>Steals from the same set of people/territory repeatedly over time</li>
+<li>Monopolist: stops other bandits from stealing from these subjects</li>
+</ul>
+<div class="fragment">
+<p>Central argument: this is better for both the bandit and the subjects</p>
+<ul>
+<li>Subjects get protection + better economic policy</li>
+<li>Bandits get more surplus than if they were roving</li>
+<li>This “system” becomes self-sustaining</li>
+</ul>
+</div>
+</section>
+<section id="roving-versus-stationary-incentives" class="slide level2">
+<h2>Roving versus stationary incentives</h2>
+<p>Unlike a roving bandit, a stationary one doesn’t want to steal <u>everything</u></p>
+<div class="fragment">
+<p>No surplus today <span class="math inline">\(\leadsto\)</span> no investment today <span class="math inline">\(\leadsto\)</span> less surplus tomorrow</p>
+<p>(nerd voice) The bandit-optimal tax rate is less than 100%</p>
+</div>
+<div class="fragment">
+<p>Stationary bandit won’t just limit theft — it’ll create conditions for investment</p>
+<ul>
+<li>Absorb the defense burden, protect against outside threats</li>
+<li>Provide some rule of law + internal policing</li>
+<li>In other words, the essential functions of <strong>statehood</strong></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Longer “time horizon” for the bandit <span class="math inline">\(\leadsto\)</span> more incentive to act like a state</p>
+</div>
+</section>
+<section id="the-lion-versus-the-housecat" class="slide level2">
+<h2>The lion versus the housecat</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="female_lion.webp" class="quarto-figure quarto-figure-center" height="300"></p>
+</figure>
+</div>
+<ul>
+<li>Will kill you and eat you</li>
+<li>Always on the hunt</li>
+<li>Always starving</li>
+</ul>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="ophelia.jpg" class="quarto-figure quarto-figure-center" height="300"></p>
+</figure>
+</div>
+<ul>
+<li>Meows at me, knocks things over</li>
+<li>Knows exactly when + where food is</li>
+<li>Only pretends to be starving</li>
+</ul>
+</div></div>
+<center>
+<strong>Who’s got the better life?</strong>
+</center>
+</section></section>
+<section>
+<section id="evidence-for-olsons-theory" class="title-slide slide level1 center">
+<h1>Evidence for Olson’s theory</h1>
+
+</section>
+<section id="deriving-hypotheses" class="slide level2">
+<h2>Deriving hypotheses</h2>
+<p>If Olson’s theory of stationary bandits emerging under anarchy is correct, what patterns should we expect to observe?</p>
+<ol type="1">
+<li class="fragment">Stationary bandits will establish where the potential gains are highest
+<ul>
+<li class="fragment">High value of whatever is produced locally</li>
+<li class="fragment">Low defensibility against bandit theft</li>
+</ul></li>
+<li class="fragment">Longer time horizon among bandits <span class="math inline">\(\leadsto\)</span> better treatment of subjects</li>
+<li class="fragment">The economy does better under a forward-looking stationary bandit than under anarchy</li>
+</ol>
+<div class="fragment">
+<p><strong>Problem:</strong> Very hard to measure these variables for the times when most present-day states were being formed!</p>
+</div>
+</section>
+<section id="context-eastern-drc" class="slide level2">
+<h2>Context: Eastern DRC</h2>
+<div class="columns">
+<div class="column">
+<p>To test theory, need data on somewhere with roving bandits — state of anarchy</p>
+<p>Sánchez de la Sierra’s answer: Democratic Republic of Congo</p>
+<p>No central control in east — numerous armed rebels</p>
+<p>Production for global markets</p>
+<ul>
+<li>Coltan: bulky, hard to transport</li>
+<li>Gold: small, easily hidden</li>
+</ul>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drc_2025.webp"></p>
+<figcaption>Eastern DRC in 2025 (BBC)</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="hypothesis-1-where-do-bandits-settle-down" class="slide level2">
+<h2>Hypothesis 1: Where do bandits settle down?</h2>
+<ol type="1">
+<li>Stationary bandits will establish where the potential gains are highest: high value, low defensibility</li>
+</ol>
+<div class="columns">
+<div class="column fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="coltan.jpg" height="250"></p>
+<figcaption>Coltan mining (Christian Science Monitor)</figcaption>
+</figure>
+</div>
+<p>Bulky, costly to transport</p>
+<p>Increase in price <span class="math inline">\(\leadsto\)</span> rebels tax <span class="alert">production sites</span> where coltan is mined</p>
+</div><div class="column fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="gold.webp" height="250"></p>
+<figcaption>Gold mining (PRI)</figcaption>
+</figure>
+</div>
+<p>Easy to hide — hard to tax production</p>
+<p>Increase in price <span class="math inline">\(\leadsto\)</span> rebels tax <span class="alert">support village</span> where earnings are consumed</p>
+</div></div>
+</section>
+<section id="hypothesis-2-how-do-bandits-behave" class="slide level2">
+<h2>Hypothesis 2: How do bandits behave?</h2>
+<ol start="2" type="1">
+<li>Longer time horizon among bandits <span class="math inline">\(\leadsto\)</span> better treatment of subjects</li>
+</ol>
+<div class="fragment">
+<p>How to measure time horizon? <strong>Type of armed group</strong></p>
+</div>
+<div class="fragment">
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 16%">
+<col style="width: 18%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Village militia</th>
+<th>Regional militia</th>
+<th>Army</th>
+<th>External militia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Villages controlled</td>
+<td>136</td>
+<td>98</td>
+<td>153</td>
+<td>206</td>
+</tr>
+<tr class="even">
+<td>Attacks per village controlled</td>
+<td><span class="cell-green">0.01</span></td>
+<td><span class="cell-red">2.6</span></td>
+<td>0.2</td>
+<td><span class="cell-red">2.6</span></td>
+</tr>
+<tr class="odd">
+<td>Provide security at mine</td>
+<td><span class="cell-green">77%</span></td>
+<td><span class="cell-red">62%</span></td>
+<td>69%</td>
+<td><span class="cell-red">62%</span></td>
+</tr>
+<tr class="even">
+<td>Provide security to village</td>
+<td>59%</td>
+<td><span class="cell-red">28%</span></td>
+<td><span class="cell-green">72%</span></td>
+<td>29%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="hypothesis-3-are-regular-people-better-off" class="slide level2">
+<h2>Hypothesis 3: Are regular people better off?</h2>
+<ol start="3" type="1">
+<li>The economy does better under a forward-looking stationary bandit than under anarchy</li>
+</ol>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slds_table4.png"></p>
+<figcaption>Sánchez de la Sierra 2020, Table 4</figcaption>
+</figure>
+</div>
+<!--
+Outline for this part:
+
+- Deriving hypotheses from Olson:
+  - Stationary bandits will establish themselves where they can steal stuff
+  - Longer time horizon -> better treatment of population
+  - Longer time horizon + stationary bandit -> population better off
+- What we need to test those hypotheses
+  - Condition of anarchy
+  - Variation in lootability, time horizon, establishment of stationary bandit
+- Why SldS looks to the Congo case + how he measures things
+- Summary of findings
+
+-->
+</div>
+</section></section>
+<section>
+<section id="wrapping-up" class="title-slide slide level1 center">
+<h1>Wrapping up</h1>
+
+</section>
+<section id="the-big-picture" class="slide level2">
+<h2>The big picture</h2>
+<p>Olson’s theory</p>
+<ul>
+<li>Collective action problem <span class="math inline">\(\leadsto\)</span> state won’t emerge from voluntary action</li>
+<li>Instead, expect a criminal group to monopolize violence</li>
+<li>Long enough time horizon <span class="math inline">\(\leadsto\)</span> governance becomes less criminal</li>
+</ul>
+<div class="fragment">
+<p>Sánchez de la Sierra’s evidence</p>
+<ul>
+<li>Eastern DRC as closest approximation of anarchic environment</li>
+<li>Militias monopolize violence where there’s high value they can easily extract</li>
+<li>Population treatment + welfare are best under state army / militias with local ties</li>
+</ul>
+</div>
+</section>
+<section id="to-do-for-next-time" class="slide level2">
+<h2>To do for next time</h2>
+<p><strong>No class Monday</strong> for MLK holiday!</p>
+<ul>
+<li>Optional bonus thought exercise: Read MLK’s <a href="https://www.csuchico.edu/iege/_assets/documents/susi-letter-from-birmingham-jail.pdf">Letter from Birmingham Jail</a> in light of Olson’s skepticism of collective action and theory of how states democratize</li>
+<li>Interesting history of the civil rights movement through the lens of military history: Thomas Ricks’ book <a href="https://www.amazon.com/Waging-Good-War-Military-1954-1968/dp/0374605165"><em>Waging a Good War</em></a></li>
+</ul>
+<p>Next Wednesday: core account of <strong>war’s influence on European state development</strong></p>
+<ul>
+<li>Read posted chapter from Tilly’s book <em>Coercion, Capital, and European States</em></li>
+<li>Reading guide to be posted by this Friday</li>
+</ul>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

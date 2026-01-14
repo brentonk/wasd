@@ -19,6 +19,24 @@ display-date: "Monday, January 12, 2026 and Wednesday, January 14, 2026"
 
 ## Approaching the readings
 
+```{=html}
+<style>
+.cell-green {
+  background-color: green;
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.cell-red {
+  background-color: red;
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+</style>
+```
+
 Some advice if you're struggling with the readings
 
 - Don't try to absorb/memorize every detail from every page
@@ -188,15 +206,270 @@ And once they do, what's to stop them from stealing everything from the subjects
 Olson's answer: incentives are right for a **stationary bandit**
 
 
-# Remaining slides TBA
+# A predatory theory of statehood
 
-Will be up by Weds 1/14!
+## States of anarchy
 
+::: {.columns}
+:::: {.column}
+![*One Piece*, ch. 1](http://multiversitystatic.s3.amazonaws.com/uploads/2015/08/One-Piece-Golden-Age.jpg){width="70%" fig-align="center"}
+::::
+:::: {.column}
+**Anarchy:** no centralized authority to provide security or enforce contracts
+
+World of "self help" --- must provide own defense/enforcement
+
+Examples
+
+- Prehistorical humanity
+- Caribbean pirate era, 1650--1730
+- China's Warlord Era, 1916--1928
+- Somalia, 1991--2012 (or longer)
+- Eastern DRC, 1990s--present
+::::
+:::
+
+## Roving bandits
+
+An old question --- in a "state of nature" (anarchy), will we all be nice to each other, or all kill each other?
+
+More realistic premise: [some]{.underline} people will predate upon others
+
+. . .
+
+Characteristics of the **roving bandit**
+
+- Does not produce economically valuable goods
+- Lives by stealing production from others
+- "Invests" in means of theft: arms, horses, cronies
+- Opportunistic --- finds a chance to steal the most value facing the least resistance, then moves on to a new target
+- Essentially a parasite on the economy
+
+## Roving banditry and economic incentives
+
+A very simple model of the human economy
+
+- People choose how much time/effort to spend laboring
+- Labor produces output, which people divide between...
+  - Consumption, including subsistence (bare minimum to stay alive)
+  - Investment, raising future labor productivity
+  - Defense, protecting consumption + investment from predation
+- Goal is to maximize lifetime consumption, minus labor costs
+
+. . .
+
+**Discuss with your neighbors:**
+What does the balance of labor look like in a world without bandits?
+As the frequency and threat of banditry increases, how does this balance change?
+
+## Roving banditry is even bad for the bandits
+
+Little incentive for a roving bandit to limit their predation
+
+- If you don't steal it today, someone else will tomorrow
+- Only limiting factor is retaliation from the targets
+
+. . .
+
+$\leadsto$ little incentive to produce/invest above subsistence line
+
+- Going to lose it all to a bandit eventually
+- Surplus should go to defense, or just leisure
+
+. . .
+
+$\leadsto$ leaving relatively little for the roving bandits to take!
+
+## From roving to stationary banditry
+
+Olson's claim: expect a **stationary bandit** to emerge from anarchy
+
+Key features of a stationary bandit
+
+- Steals from the same set of people/territory repeatedly over time
+- Monopolist: stops other bandits from stealing from these subjects
+
+. . .
+
+Central argument: this is better for both the bandit and the subjects
+
+- Subjects get protection + better economic policy
+- Bandits get more surplus than if they were roving
+- This "system" becomes self-sustaining
+
+## Roving versus stationary incentives
+
+Unlike a roving bandit, a stationary one doesn't want to steal [everything]{.underline}
+
+. . .
+
+No surplus today $\leadsto$ no investment today $\leadsto$ less surplus tomorrow
+
+(nerd voice) The bandit-optimal tax rate is less than 100%
+
+. . .
+
+Stationary bandit won't just limit theft --- it'll create conditions for investment
+
+- Absorb the defense burden, protect against outside threats
+- Provide some rule of law + internal policing
+- In other words, the essential functions of **statehood**
+
+. . .
+
+Longer "time horizon" for the bandit $\leadsto$ more incentive to act like a state
+
+
+## The lion versus the housecat
+
+::: {.columns}
+:::: {.column}
+![](female_lion.webp){height="300px" fig-align="center"}
+
+- Will kill you and eat you
+- Always on the hunt
+- Always starving
+::::
+:::: {.column}
+![](ophelia.jpg){height="300px" fig-align="center"}
+
+- Meows at me, knocks things over
+- Knows exactly when + where food is
+- Only pretends to be starving
+::::
+:::
+
+<center>**Who's got the better life?**</center>
+
+# Evidence for Olson's theory
+
+## Deriving hypotheses
+
+If Olson's theory of stationary bandits emerging under anarchy is correct, what patterns should we expect to observe?
+
+::: {.incremental}
+1. Stationary bandits will establish where the potential gains are highest
+   - High value of whatever is produced locally
+   - Low defensibility against bandit theft
+2. Longer time horizon among bandits $\leadsto$ better treatment of subjects
+3. The economy does better under a forward-looking stationary bandit than under anarchy
+:::
+
+. . .
+
+**Problem:** Very hard to measure these variables for the times when most present-day states were being formed!
+
+## Context: Eastern DRC
+
+::: {.columns}
+:::: {.column}
+To test theory, need data on somewhere with roving bandits --- state of anarchy
+
+Sánchez de la Sierra's answer: Democratic Republic of Congo
+
+No central control in east ---
+numerous armed rebels
+
+Production for global markets
+
+- Coltan: bulky, hard to transport
+- Gold: small, easily hidden
+::::
+:::: {.column}
+![Eastern DRC in 2025 (BBC)](drc_2025.webp){fig-align="center"}
+::::
+:::
+
+## Hypothesis 1: Where do bandits settle down?
+
+1. Stationary bandits will establish where the potential gains are highest: high value, low defensibility
+
+::: {.columns}
+:::: {.column .fragment}
+![Coltan mining (Christian Science Monitor)](coltan.jpg){fig-align="center" height="250px"}
+
+Bulky, costly to transport
+
+Increase in price $\leadsto$ rebels tax [production sites]{.alert} where coltan is mined
+::::
+:::: {.column .fragment}
+![Gold mining (PRI)](gold.webp){fig-align="center" height="250px"}
+
+Easy to hide --- hard to tax production
+
+Increase in price $\leadsto$ rebels tax [support village]{.alert} where earnings are consumed
+::::
+:::
+
+## Hypothesis 2: How do bandits behave?  
+
+2. Longer time horizon among bandits $\leadsto$ better treatment of subjects
+
+. . .
+
+How to measure time horizon?
+**Type of armed group**
+
+. . .
+
+<br>
+
+|                                | Village militia     | Regional militia | Army               | External militia |
+|--------------------------------|---------------------|------------------|--------------------|------------------|
+| Villages controlled            | 136                 | 98               | 153                | 206              |
+| Attacks per village controlled | [0.01]{.cell-green} | [2.6]{.cell-red} | 0.2                | [2.6]{.cell-red} |
+| Provide security at mine       | [77%]{.cell-green}  | [62%]{.cell-red} | 69%                | [62%]{.cell-red} |
+| Provide security to village    | 59%                 | [28%]{.cell-red} | [72%]{.cell-green} | 29%              |
+
+## Hypothesis 3: Are regular people better off?
+
+3. The economy does better under a forward-looking stationary bandit than under anarchy
+
+. . .
+
+![Sánchez de la Sierra 2020, Table 4](slds_table4.png)
 
 <!--
+Outline for this part:
+
+- Deriving hypotheses from Olson:
+  - Stationary bandits will establish themselves where they can steal stuff
+  - Longer time horizon -> better treatment of population
+  - Longer time horizon + stationary bandit -> population better off
+- What we need to test those hypotheses
+  - Condition of anarchy
+  - Variation in lootability, time horizon, establishment of stationary bandit
+- Why SldS looks to the Congo case + how he measures things
+- Summary of findings
+
+-->
+
 # Wrapping up
 
-## What we did today
+## The big picture
+
+Olson's theory
+
+- Collective action problem $\leadsto$ state won't emerge from voluntary action
+- Instead, expect a criminal group to monopolize violence
+- Long enough time horizon $\leadsto$ governance becomes less criminal
+
+. . .
+
+Sánchez de la Sierra's evidence
+
+- Eastern DRC as closest approximation of anarchic environment
+- Militias monopolize violence where there's high value they can easily extract
+- Population treatment + welfare are best under state army / militias with local ties
 
 ## To do for next time
--->
+
+**No class Monday** for MLK holiday!
+
+- Optional bonus thought exercise: Read MLK's [Letter from Birmingham Jail](https://www.csuchico.edu/iege/_assets/documents/susi-letter-from-birmingham-jail.pdf) in light of Olson's skepticism of collective action and theory of how states democratize
+- Interesting history of the civil rights movement through the lens of military history: Thomas Ricks' book [*Waging a Good War*](https://www.amazon.com/Waging-Good-War-Military-1954-1968/dp/0374605165)
+
+Next Wednesday: core account of **war's influence on European state development**
+
+- Read posted chapter from Tilly's book *Coercion, Capital, and European States*
+- Reading guide to be posted by this Friday
