@@ -84,7 +84,7 @@ HEADER
 echo -e "$sorted_guides" >> index.qmd
 
 cat >> index.qmd << 'MIDDLE'
-: {tbl-colwidths="[30, 70]"}
+: {tbl-colwidths="[35, 65]"}
 
 ## Lecture Slides
 
@@ -94,6 +94,6 @@ MIDDLE
 
 echo -e "$sorted_slides" >> index.qmd
 
-echo ': {tbl-colwidths="[30, 70]"}' >> index.qmd
+echo ': {tbl-colwidths="[35, 65]"}' >> index.qmd
 
 echo "Updated index.qmd with $(echo -e "$guides_table" | grep -c .) reading guides and $(echo -e "$slides_table" | grep -c .) slide decks"

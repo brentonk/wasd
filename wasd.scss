@@ -1,10 +1,124 @@
 /*-- scss:defaults --*/
 
-// Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+// Import fonts (matching bkenkel.com)
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Source+Code+Pro:wght@400&display=swap');
+
+// Color palette (warm brown theme from bkenkel.com)
+$body-bg: #fffdf8;
+$body-color: #3a1616;
+$link-color: #8b4513;
+$link-hover-color: #3a1616;
+
+// Bootstrap/Quarto variable overrides
+$primary: #8b4513;
+$secondary: #6b4423;
+$border-color: #d4b5a0;
+
+// Typography
+$font-family-sans-serif: "Source Serif 4", serif;
+$font-family-base: "Source Serif 4", serif;
+$headings-font-family: "Source Serif 4", serif;
+$font-family-monospace: "Source Code Pro", monospace;
+$font-size-base: 1.125rem;
+$line-height-base: 1.7;
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+
+// Navbar styling
+$navbar-bg: #fffdf8;
+$navbar-fg: #3a1616;
+$navbar-hl: #8b4513;
+
+// Code block styling
+$code-bg: #f8f4eb;
+$code-color: #3a1616;
 
 /*-- scss:rules --*/
+
+
+// Body text styling
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+// Heading spacing (matching bkenkel.com)
+h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    letter-spacing: 0.01em;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 56px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+// Paragraph spacing
+p {
+    margin-bottom: 24px;
+}
+
+// Link styling with hover animation
+a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+    color: #3a1616;
+    border-bottom-color: #3a1616;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6b4423;
+}
+
+a:visited:hover {
+    color: #3a1616;
+    border-bottom-color: #3a1616;
+}
+
+// Navbar styling to match cream background
+.navbar {
+    background-color: #fffdf8 !important;
+    border-bottom: 1px solid #e8dcd0;
+}
+
+.navbar[data-bs-theme="dark"] {
+    --bs-navbar-color: #3a1616;
+    --bs-navbar-hover-color: #8b4513;
+    --bs-navbar-active-color: #8b4513;
+    --bs-navbar-brand-color: #3a1616;
+    --bs-navbar-brand-hover-color: #8b4513;
+}
+
+.navbar-brand, .navbar-nav .nav-link, .navbar-title {
+    color: #3a1616 !important;
+}
+
+.navbar-nav .nav-link:hover, .navbar-brand:hover {
+    color: #8b4513 !important;
+}
+
+// Fix hamburger menu icon for light background
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2858, 22, 22, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+// Remove underline from section headings
+.quarto-title, h1, h2, h3, h4, h5, h6 {
+    border-bottom: none;
+}
 
 // Ordered list markers with primary color
 ol > li::marker {
@@ -22,8 +136,20 @@ table {
 }
 
 // Code styling
+code {
+    font-size: 0.9em;
+    background-color: #f8f4eb;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
 code, pre {
-    font-family: 'Iosevka Web', 'JetBrains Mono', monospace;
+    font-family: "Source Code Pro", monospace;
     font-variant-ligatures: none;
 }
 
@@ -35,7 +161,7 @@ code, pre {
 
 // Standard output styling
 .cell-output-stdout pre {
-    color: $gray-800;
+    color: #5a4a4a;
 }
 
 // MathJax sizing
@@ -43,7 +169,30 @@ mjx-container {
     font-size: 100% !important;
 }
 
-// Remove underline from section headings
-.quarto-title, h1, h2, h3, h4, h5, h6 {
-    border-bottom: none;
+// Text selection
+::selection {
+    color: #3a1616;
+    background: #f5e6c8;
+}
+
+// Image styling
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+// Footer styling
+.nav-footer {
+    background-color: #fffdf8;
+    border-top: 1px solid #e8dcd0;
+    color: #8b7355;
+}
+
+// TOC styling
+.sidebar nav[role=doc-toc] a {
+    color: #8b4513;
+}
+
+.sidebar nav[role=doc-toc] a:hover {
+    color: #3a1616;
 }

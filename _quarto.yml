@@ -12,6 +12,7 @@ project:
 website:
   title: "War and State Development"
   navbar:
+    background: light
     left:
       - href: index.qmd
         text: Home
@@ -21,7 +22,7 @@ website:
 format:
   html:
     theme:
-      - lumen
+      - default
       - wasd.scss
-    monofont: 'Iosevka Web'
-    linestretch: 1.6
+    monofont: 'Source Code Pro'
+    linestretch: 1.7
