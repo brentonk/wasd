@@ -9,7 +9,7 @@ From page 48 onward, this article contains a lot of math that I don't expect you
 Keeping that in mind, here is how I would recommend approaching this article:
 
 1.  Read pages 32--47 carefully.
-    After summarizing the research question and findings (32--37), this will take you through the theory (37--40), the key questions/hypotheses (41--43), and an overview of the data that SdlS collected to test those hypotheses (43--47).
+    After summarizing the research question and findings (32--37), this will take you through the theory (37--40), the key questions/hypotheses (41--43), and an overview of the data that Sánchez de la Sierra collected to test those hypotheses (43--47).
 2.  Go back and [reread]{.underline} the summary of the main statistical findings on pages 34--35.  ("As a foundation for this study..." paragraph through "The third result is that..." paragraph.)
     This will give you the main need-to-know about the statistical analysis in the paper.
 3.  Finally, give a *quick* skim to the full writeup of the statistical results on pages 48--70.
@@ -48,6 +48,7 @@ The overall story this row tells is that increases in gold prices have no discer
 
 Why has it historically been challenging to find data to evaluate the theory that the state emerged as a "stationary bandit"?
 According to Sánchez de la Sierra, why is the contemporary Democratic Republic of the Congo a setting where this theory can be studied?
+
 The economic difference between coltan and gold is important in this article.
 A key finding is that armed groups tax coltan-producing communities in the places where coltan itself is *produced*, whereas gold-producing communities are taxes in the places where earnings from gold production are *spent*.
 According to Sánchez de la Sierra, what is the important difference in coltan versus gold production that explains this difference in the location of taxes?
