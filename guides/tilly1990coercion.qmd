@@ -1,0 +1,39 @@
+---
+title: "Tilly 1990, 'How War Made States, and Vice Versa'"
+date: 2026-01-14
+---
+
+# Notes
+
+This chapter comes from Tilly's 1990 book, *Coercion, Capital, and European States*.
+For the most part it can be read in isolation, but there is one set of terms introduced in earlier chapters that will be helpful to know:
+
+- *Coercion-intensive* states had largely agrarian economies and societies.
+  If they wanted to fight wars, they had to build a large coercive apparatus to extract resources from the population at large.
+  Examples included Russia and Prussia (the precursor to modern-day Germany).
+
+- *Capital-intensive* states had largely commercial economies, dominated by cities.
+  They could fight wars by raising money from commercial interests, either through taxation mechanisms like customs or by borrowing from banks.
+  Examples included Italian city-states and the Dutch Republic.
+
+- *Capitalized coercion* states like England and France had access to both large agrarian societies and commercialized city/port economies.
+
+# Questions
+
+Comparing the medieval period to the present day, what are some of the specific examples of how states have increased their monopoly over violence, reducing ordinary citizens' access to means of coercive force?
+
+Tilly takes a deep dive into the rise and decline of mercenary armies in Europe.
+What were the advantages and disadvantages of a mercenary force, compared to an army raised from domestic sources?
+Why did reliance on mercenaries eventually die out?
+
+Tilly describes how European states once built their armies by seizing the means of coercion, but eventually moved toward buying them instead.
+He writes that this could only occur in "a relatively monetized economy" with "ready availability of credit" (pages 84--85).
+Explain why *both* of these two conditions are necessary for a state that wants to build an army through taxation and purchase.
+
+According to Tilly, why was the presence of large commercial cities an important determinant of a country's ability to win wars?
+
+Tilly observes a "ratchet effect": state budgets increase at times of war, but then do not come down when the war is offer.
+What explanations does he provide for this pattern?
+
+At the end of the chapter, Tilly looks briefly at the overseas wars of colonial expansion that European states were frequently engaged in.
+Compared to more traditional wars on their own borders, what were the differences in how these wars affected the scope and course of state development?

@@ -13,7 +13,7 @@ author:
     email: brenton.kenkel@gmail.com
     affiliations: Vanderbilt University
 date: 2026-01-12
-display-date: "Monday, January 12, 2026 and Wednesday, January 14, 2026"
+display-date: "Monday, January 12 and Wednesday, January 14"
 ---
 
 

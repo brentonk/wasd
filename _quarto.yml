@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  pre-render: ./update-site.sh
   render:
     - "*.qmd"
     - "guides/*.qmd"

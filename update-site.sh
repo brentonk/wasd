@@ -15,8 +15,8 @@ for qmd in guides/*.qmd; do
     # Get the HTML path (same name as qmd but .html)
     html_path="${qmd%.qmd}.html"
 
-    # Format date for display (YYYY-MM-DD -> Day, Month D, YYYY)
-    formatted_date=$(date -d "$date" "+%A, %B %-d, %Y" 2>/dev/null || echo "$date")
+    # Format date for display (YYYY-MM-DD -> Day, Month D)
+    formatted_date=$(date -d "$date" "+%A, %B %-d" 2>/dev/null || echo "$date")
 
     # Store with sortable date prefix for sorting
     guides_table+="$date|$formatted_date|$title|$html_path\n"
@@ -47,7 +47,7 @@ for qmd in slides/*/*.qmd; do
     if [ -n "$display_date" ]; then
         formatted_date="$display_date"
     else
-        formatted_date=$(date -d "$date" "+%A, %B %-d, %Y" 2>/dev/null || echo "$date")
+        formatted_date=$(date -d "$date" "+%A, %B %-d" 2>/dev/null || echo "$date")
     fi
 
     # Store with sortable date prefix for sorting
