@@ -33,6 +33,11 @@ for qmd in slides/*/*.qmd; do
         continue
     fi
 
+    # Skip files with draft: true in frontmatter
+    if grep -q "^draft: *true" "$qmd"; then
+        continue
+    fi
+
     # Extract title and date from YAML front matter
     title=$(grep -m1 "^title:" "$qmd" | sed 's/^title: *//' | tr -d '"')
     date=$(grep -m1 "^date:" "$qmd" | sed 's/^date: *//')
