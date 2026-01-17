@@ -10,7 +10,7 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Wednesday, January 7 | [Spruyt 1994, 'Institutional Selection in International Relations: State Anarchy as Order'](guides/spruyt1994institutional.html) |
 | Monday, January 12 | [Olson 1993, 'Dictatorship, Democracy, and Development'](guides/olson1993dictatorship.html) |
 | Wednesday, January 14 | [Sánchez de la Sierra 2020, 'On the Origins of the State'](guides/sanchez2020origins.html) |
-| Wednesday, January 14 | [Tilly 1990, 'How War Made States, and Vice Versa'](guides/tilly1990coercion.html) |
+| Wednesday, January 21 | [Tilly 1990, 'How War Made States, and Vice Versa'](guides/tilly1990coercion.html) |
 
 : {tbl-colwidths="[35, 65]"}
 
@@ -21,5 +21,6 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Monday, January 5 | [Introduction to the course](slides/01-05_course_intro/01-05_course_intro.html){target="_blank"} |
 | Wednesday, January 7 | [Sovereign states](slides/01-07_sovereign_states/01-07_sovereign_states.html){target="_blank"} |
 | Monday, January 12 and Wednesday, January 14 | [Roving and stationary bandits](slides/01-12_roving_vs_stationary/01-12_roving_vs_stationary.html){target="_blank"} |
+| last-modified | [A title](slides/01-21_war_made_states/01-21_war_made_states.html){target="_blank"} |
 
 : {tbl-colwidths="[35, 65]"}
