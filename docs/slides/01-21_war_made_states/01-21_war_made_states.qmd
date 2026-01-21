@@ -1,0 +1,545 @@
+---
+title: How war made states in Europe
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    chalkboard: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-01-21
+---
+
+
+## Recap
+
+Previously in PSCI 2227 --- the basics of state development
+
+- Spruyt 1994: sovereign territorial states won out --- but weren't inevitable
+
+- Olson 1993: state development as evolution of criminal enterprise
+
+- Sánchez de la Sierra 2020: evidence for Olson's theory from the DRC
+
+## Today's agenda
+
+Putting the **war** in "war and state development"
+
+1. Crash course on theories of war
+
+2. Tilly's account of war and state development in Europe
+   - How war made states
+   - Why this process was self-perpetuating
+   - The role of commerce and capital
+
+
+# Why wars happen
+
+aka "PSCI 2221 in 30 minutes"
+
+## Building a theory of war
+
+War, for our purposes: **organized violence** in pursuit of **political aims**
+
+. . .
+
+Basic premises for a theory of war
+
+- Rulers' interests may come into conflict
+- They can resolve these conflicts through diplomacy (bargaining) or force
+- They consider the costs and benefits of each approach
+  - Implicitly ruling out emotional/psychological explanations
+  - "Rationalist" approach --- widely, but not universally, used in the field
+
+. . .
+
+Further reading on causes of war
+
+- Fearon 1995, "Rationalist Explanations for War"
+- Powell 1999, *In the Shadow of Power*
+
+## The bargaining model of war
+
+```{r}
+#| echo: false
+
+library(ggplot2)
+
+# Font sizes
+size_endpoint <- 5      # "A's share", "B's share"
+size_main <- 6          # q and p labels
+size_label <- 5         # acceptance set labels
+
+# Colors
+col_A <- "#2166ac"
+col_B <- "#b2182b"
+col_p <- "#756bb1"
+col_range <- "#4dac26"
+
+# Model parameters
+q <- 0.55               # Status quo (fixed)
+c_A <- 0.15             # A's cost of war
+c_B <- 0.12             # B's cost of war
+p_satisfied <- 0.6      # Military balance when both satisfied
+p_dissatisfied <- 0.8   # Military balance when A is dissatisfied (A got stronger)
+
+# Bargaining ranges
+lower_sat <- p_satisfied - c_A
+upper_sat <- p_satisfied + c_B
+lower_dissat <- p_dissatisfied - c_A
+upper_dissat <- p_dissatisfied + c_B
+
+# Base theme and limits for all plots
+base_theme <- list(
+  scale_x_continuous(limits = c(-0.05, 1.05), expand = c(0, 0)),
+  scale_y_continuous(limits = c(-0.75, 0.6)),
+  theme_void(),
+  theme(plot.margin = margin(10, 10, 10, 10))
+)
+
+# Base number line elements
+number_line <- list(
+  geom_segment(aes(x = 0, xend = 1, y = 0, yend = 0), linewidth = 1),
+  geom_segment(aes(x = 0, xend = 0, y = -0.05, yend = 0.05), linewidth = 0.8),
+  geom_segment(aes(x = 1, xend = 1, y = -0.05, yend = 0.05), linewidth = 0.8),
+  annotate("text", x = 0, y = -0.12, label = "A's share", size = size_endpoint),
+  annotate("text", x = 1, y = -0.12, label = "B's share", size = size_endpoint)
+)
+
+# Status quo point
+status_quo <- list(
+  geom_point(aes(x = q, y = 0), size = 4, color = "black"),
+  annotate("text", x = q, y = 0.12, label = expression(italic(q)), size = size_main)
+)
+
+# Military balance point (takes p value as argument)
+mil_balance <- function(p) {
+  list(
+    geom_point(aes(x = p, y = 0), size = 4, color = col_p),
+    annotate("text", x = p, y = 0.12, label = expression(italic(p)), size = size_main, color = col_p)
+  )
+}
+
+# A's acceptance set (takes lower bound as argument)
+accept_A <- function(lower) {
+  list(
+    geom_segment(aes(x = lower, xend = 1, y = 0.35, yend = 0.35),
+                 color = col_A, linewidth = 2,
+                 arrow = arrow(length = unit(0.15, "inches"), type = "closed")),
+    geom_point(aes(x = lower, y = 0.35), size = 3, color = col_A),
+    annotate("text", x = lower, y = 0.48, label = expression(italic(p) - italic(c)[A]),
+             size = size_label, color = col_A),
+    annotate("text", x = 0.92, y = 0.48, label = "A accepts", size = size_label, color = col_A)
+  )
+}
+
+# B's acceptance set (takes upper bound as argument)
+accept_B <- function(upper) {
+  list(
+    geom_segment(aes(x = upper, xend = 0, y = -0.35, yend = -0.35),
+                 color = col_B, linewidth = 2,
+                 arrow = arrow(length = unit(0.15, "inches"), type = "closed")),
+    geom_point(aes(x = upper, y = -0.35), size = 3, color = col_B),
+    annotate("text", x = upper, y = -0.48, label = expression(italic(p) + italic(c)[B]),
+             size = size_label, color = col_B),
+    annotate("text", x = 0.08, y = -0.48, label = "B accepts", size = size_label, color = col_B)
+  )
+}
+
+# Bargaining range overlay (takes bounds and label/color as arguments)
+bargain_range <- function(lower, upper, lbl, lbl_col) {
+  list(
+    geom_rect(aes(xmin = lower, xmax = upper, ymin = -0.08, ymax = 0.08),
+              fill = col_range, alpha = 0.3),
+    annotate("text", x = (lower + upper) / 2, y = -0.65,
+             label = lbl, size = size_label, fontface = "bold", color = lbl_col)
+  )
+}
+```
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 1: Just the number line
+ggplot() +
+  number_line +
+  base_theme
+```
+
+two rulers, A and B, seeking to divvy up "territory"
+
+(source of dispute doesn't need to literally be territory)
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 2: Add status quo
+ggplot() +
+  number_line +
+  status_quo +
+  base_theme
+```
+
+q: the status quo division of territory
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 3: Add military balance p
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_satisfied) +
+  base_theme
+```
+
+p: how much could A win by fighting?
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 4: Add A's acceptance set
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_satisfied) +
+  accept_A(lower_sat) +
+  base_theme
+```
+
+A's acceptance set: what divisions would A prefer over war?
+
+(incorporates costs of war)
+
+"satisfied" = status quo in acceptance set
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 5: Add B's acceptance set
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_satisfied) +
+  accept_A(lower_sat) +
+  accept_B(upper_sat) +
+  base_theme
+```
+
+B's acceptance set: what divisions would B prefer over war?
+
+(also incorporates costs)
+
+"satisfied" = status quo in acceptance set
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 6: Add bargaining range - both satisfied
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_satisfied) +
+  accept_A(lower_sat) +
+  accept_B(upper_sat) +
+  bargain_range(lower_sat, upper_sat, "Both satisfied", col_range) +
+  base_theme
+```
+
+Bargaining range: agreements [mutually]{.underline} preferable to war
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 7: Dissatisfied case - q stays the same
+ggplot() +
+  number_line +
+  status_quo +
+  base_theme
+```
+
+status quo enough out of line with military power $\leadsto$ dissatisfaction
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 8: Dissatisfied case - add shifted p
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_dissatisfied) +
+  base_theme
+```
+
+status quo enough out of line with military power $\leadsto$ dissatisfaction
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 9: Dissatisfied case - add A's acceptance set
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_dissatisfied) +
+  accept_A(lower_dissat) +
+  base_theme
+```
+
+status quo enough out of line with military power $\leadsto$ dissatisfaction
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 10: Dissatisfied case - add B's acceptance set
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_dissatisfied) +
+  accept_A(lower_dissat) +
+  accept_B(upper_dissat) +
+  base_theme
+```
+
+status quo enough out of line with military power $\leadsto$ dissatisfaction
+
+## The bargaining model of war {visibility="uncounted"}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 3
+
+# Step 11: Dissatisfied case - add bargaining range
+ggplot() +
+  number_line +
+  status_quo +
+  mil_balance(p_dissatisfied) +
+  accept_A(lower_dissat) +
+  accept_B(upper_dissat) +
+  bargain_range(lower_dissat, upper_dissat, "A dissatisfied", col_B) +
+  base_theme
+```
+
+status quo enough out of line with military power $\leadsto$ dissatisfaction
+
+dissatisfaction is **necessary** for conflict but not **sufficient**
+
+## The insufficiency of dissatisfaction
+
+Even when a state is dissatisfied, there are mutually acceptable agreements
+
+Dissatisfaction $\leadsto$ status quo needs revision
+
+- But that can happen through bargaining as well as war
+- And bargaining gets there with fewer costs
+
+The hurdle that any theory of conflict must clear:
+
+   *Why don't they reach a bargain they both prefer over war?*
+
+## Incomplete information
+
+::: {.columns}
+:::: {.column}
+![Saddam Hussein (Getty Images)](hussein.webp){fig-align="center" width="80%"}
+::::
+:::: {.column}
+Lots of secrets: strength, competence, willingness to fight
+
+$\leadsto$ countries don't know each other's "breaking points"
+
+$\leadsto$ potential bargaining failure
+
+e.g., 2003 Iraq War
+
+- U.S. didn't know Iraq didn't have nuclear weapons
+- Iraq didn't know U.S. would invade if it thought Iraq was nuclear
+::::
+:::
+
+## Shifting power and commitment problems
+
+::: {.columns}
+::: {.column width="40%"}
+One country rising, other declining
+
+Declining state wants to "lock in" today's balance of power
+
+Rising state can't commit not to renege on a deal made today
+
+$\leadsto$ anything that would buy off the declining state, the rising state can't credibly promise to give
+:::
+::: {.column width="60%"}
+![](thucydides-chart.png){fig-align="center"}
+:::
+:::
+
+## Domestic politics
+
+Baseline bargaining model assumes "the state" pays costs + receives benefits
+
+But what if the public pays the cost and the leader gets the benefits?
+
+- Old days: direct profit from crown lands
+- Modern times: "rally round the flag" effect
+
+Possible divergence between public interest + leader actions
+
+... especially if ruler is **unrepresentative** and **unconstrained**
+
+
+# War-making and state-building
+
+## Tilly 1990, "How War Made States, and Vice Versa"
+
+Tilly proposes a theory to explain **three patterns** in early modern Europe
+
+. . .
+
+1. Consolidation and growth of territorial states
+
+. . .
+
+2. Increased violence across borders, decreased violence within them
+
+. . .
+
+3. Rise of capital-intensive modes of production and violence
+
+## Tilly's theory
+
+"War made the state, and the state made war"
+
+. . .
+
+**Premises**
+
+- Rulers want to stay in power + get rich along the way
+- Rampant opportunity + willingness to use violence to gain territory
+  - State of anarchy --- no one to stop the use of force
+
+. . .
+
+**Conclusions**
+
+- Military competition forced rulers to extract immense resources to keep up
+- Centralized, territorial states were best suited to survive --- and then to shake down their neighbors
+- Wartime governance innovations persisted even when threats dissipated
+
+## Key mechanisms in the theory
+
+<br>
+
+::: {.r-stack}
+![](flowchart1.png){fig-align="center"}
+
+![](flowchart2.png){.fragment fig-align="center"}
+
+![](flowchart3.png){.fragment fig-align="center"}
+
+![](flowchart4.png){.fragment fig-align="center"}
+:::
+
+## The role of commerce and capital
+
+Commercial states have major advantages in wartime
+
+- Most important thing is to have the bigger army
+- Even with conscription, can't arm + supply soldiers w/o money
+- Almost impossible to ramp up budget quickly enough without borrowing
+- Commercial economy $\leadsto$ banks, credit markets $\leadsto$ borrowing capacity
+
+. . .
+
+Compounding peacetime advantages
+
+- Monetary economy --- can impose taxes instead of in-kind contributions
+- Less distortion to the underlying economy --- keep the engine going
+
+. . .
+
+$\leadsto$ commercial states more successful --- and aggressive
+
+<!--
+
+  - Call back to Spruyt here in terms of increase in commercial value
+  - Advantage during war: ability to borrow, access to credit
+  - Compounding advantage in peacetime: more efficient allocation of resources since revenue could be raised through taxation instead of in-kind contribution
+  - Combination of effects leads to more successful (and perhaps also more aggressive) commercial states
+-->
+
+# Wrapping up
+
+## What we did today
+
+1. Bargaining model of war
+   - Necessary condition: military balance out of whack w/ status quo (dissatisfaction)
+   - But then, why does bargaining fail?
+     - Private information
+     - Shifting power
+     - Domestic politics/ruler incentives
+
+2. Tilly's theory of European state development
+   - War makes states --- develop or die out
+   - Institutional developments persist into peace --- and increase the incentive for further war
+   - Commercial/capitalist states advantaged in both ends of process
+
+## Next time
+
+Tilly tells a nice story --- does it stand up to statistical scrutiny?
+
+- A skeptical take: Abramson, "The Economic Origins of the Territorial State"
+- Reading guide to be posted by Friday
+
+**Snowpocalypse contingencies:**
+
+- If Vandy cancels, no class
+- If Vandy's open but local public schools closed, Zoom class
+
+Keep thinking about the final project!
+
+- Feel free to email me with ideas, <brenton.kenkel@gmail.com>
+- Or come to my office hours, Tues 2:00--3:30pm, Commons 326
