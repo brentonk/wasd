@@ -1,0 +1,44 @@
+---
+title: "Abramson 2017, 'The Economic Origins of the Territorial State'"
+date: 2026-01-26
+---
+
+# Notes
+
+Abramson uses an [instrumental variables](https://en.wikipedia.org/wiki/Instrumental_variable) approach to separate correlation from causation in his statistical analysis.
+
+- You definitely don't need to know the ins and outs of this statistical technique for our purposes in PSCI 2227, though you're welcome to consult my notes from [PSCI 2301](https://github.com/brentonk/psci2301_slides/blob/main/08_01_instruments_theory/08_01_instruments_theory.pdf) or [PSCI 8357](https://bkenkel.com/pdaps/instruments.html) if you want to learn more.
+
+- Here's the basic idea behind Abramson's instrumental variables analysis.  He wants to show that urbanization caused political fragmentation, and indeed he finds that these variables are correlated.  But there are multiple viable explanations for this correlation:
+
+  1. Urbanization causes fragmentation. (Abramson's theoretical claim.)
+
+  2. Fragmentation causes urbanization.  (Reverse causality.)
+
+  3. Some other variable (or set of variables) are responsible for both urbanization and fragmentation.  ([Confounding](https://en.wikipedia.org/wiki/Confounding) bias.)
+
+  These explanations aren't mutually exclusive --- all three could be true to some degree.  Abramson just wants to convince us that #1 is true, not that #2 and #3 are false.
+
+  To accomplish this, Abramson identifies agricultural factors --- specifically, the suitability of the land to grow wheat and other cereals --- as an influence on urbanization that could not plausibly be an effect of political fragmentation, nor could it plausibly have a direct influence on fragmentation (see pages 120--121 for Abramson's reasoning behind this claim).  In essence, the statistical analysis involves comparing the levels of political fragmentation between places with high and low suitability for growing cereals.  Because cereal suitability affects urbanization but doesn't directly affect fragmentation, any difference between these groups is plausible evidence that urbanization causes fragmentation.
+
+You can just skim through the "Constructing the Data" subsection on pages 106--107.  This is mostly just Abramson "showing his work" for other scholars who do similar research.
+
+Similarly, don't worry about the math behind the "Cox proportional hazards" model that pops up on page 112 and elsewhere.  Skim through the deep dives on the numbers; focus on the parts where Abramson provides plain-language explanations of his findings.
+
+# Questions
+
+Abramson writes that "small political units continued to thrive" between 1500 and 1800.  Why does this fact pose a challenge to Tilly's theory that war made the state?
+
+What does Abramson see as the primary explanation for patterns in European state formation before the French Revolution?  Where does his account align with Tilly's, and where does it depart?
+
+To define a "state" for his statistical analysis, Abramson makes two modifications to Weber's definition: (1) he weakens "monopoly" to "quasi-monopoly" and (2) he removes the concept of "legitimacy."  Why does he think it is necessary to make each of these changes?  In practice, what key characteristics does he look for to classify a political organization as a state?
+
+As you can see in the top panel of Figure 1, the average state size increased between the mid-1400s and 1800.  This appears to be evidence in favor of the bellicist hypothesis --- so what does Abramson say is wrong with this measure?
+
+What evidence does Abramson find about the relationship between state size and military success, and the extent to which this relationship changed in the period between 1100 and 1800?
+
+How does Abramson's account of the role of commerce in European state formation align with what you read from Spruyt and Tilly?  What *new* arguments does he add to that theory?
+
+What is special about the places in the "arc" stretching from the present-day Netherlands down to northern Italy?  Specifically, in terms of geography, economics, and political organization, how did this region differ from more peripheral parts of Europe?
+
+Abramson concludes that it is a mistake to analyze the history of European state development by focusing mainly on "great powers" like France.  Why is this a mistake?  How does his analysis avoid this mistake?
