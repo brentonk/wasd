@@ -114,6 +114,9 @@ All readings will be available on Brightspace. For each reading, I’ll
 provide a reading guide with questions to help walk you through the
 reading and extract the most important information.
 
+**This syllabus has been updated to reflect the cancellation of the
+January 26 and 28 classes due to the ice storm.**
+
 | Topic | Date | Reading |
 |----|----|----|
 | Intro to the course | Mon Jan 5 | No readings |
@@ -124,22 +127,22 @@ reading and extract the most important information.
 |  | Mon Jan 19 | *No class — MLK Day* |
 |  |  |  |
 | Territorial control | Wed Jan 21 | Tilly (1990), ch. 3 |
-|  | Mon Jan 26 | Abramson (2017) |
-|  | Wed Jan 28 | Thies (2005) |
-|  | Mon Feb 2 | Dincecco and Wang (2018) |
-|  | Wed Feb 4 | Henn and Robinson (2025) |
+|  | Mon Jan 26 | *Cancelled* |
+|  | Wed Jan 28 | *Cancelled* |
+|  | Mon Feb 2 | Abramson (2017) |
+|  | Wed Feb 4 | Thies (2005) |
+|  | Mon Feb 9 | Dincecco and Wang (2018) |
 |  |  |  |
-| Raising revenue | Mon Feb 9 | Levi (1988), ch. 2 |
-|  | Wed Feb 11 | Karaman and Pamuk (2013) |
-|  | Fri Feb 13 | **Research proposal due** |
-|  | Mon Feb 16 | Queralt (2019) |
+|  | Wed Feb 11 | Proposal writing workshop |
 |  |  |  |
-|  | Wed Feb 18 | Catch up/midterm review |
-|  | Mon Feb 23 | **Midterm exam** |
+| Raising revenue | Mon Feb 16 | Levi (1988), ch. 2 |
+|  | Wed Feb 18 | Karaman and Pamuk (2013) |
+|  | Fri Feb 20 | **Research proposal due** |
+|  | Mon Feb 23 | Queralt (2019) |
 |  |  |  |
 | Parliaments | Wed Feb 25 | Kenkel and Paine (2023) |
-|  | Mon Mar 2 | Cox, Dincecco, and Onorato (2023) |
-|  | Wed Mar 4 | Becker et al. (2020) |
+|  | Mon Mar 2 | **Midterm exam** |
+|  | Wed Mar 4 | Cox, Dincecco, and Onorato (2023) |
 |  |  |  |
 |  | Mon Mar 9 | *No class — spring break* |
 |  | Wed Mar 11 | *No class — spring break* |
@@ -189,14 +192,6 @@ Origin and Spread of Nationalism*. Verso.
 
 </div>
 
-<div id="ref-becker2020wars" class="csl-entry">
-
-Becker, Sascha O., Andreas Ferrara, Eric Melander, and Luigi Pascali.
-2020. “Wars, Taxation, and Representation: Evidence from Five Centuries
-of German History.” <https://cepr.org/publications/dp15601>.
-
-</div>
-
 <div id="ref-blattman2009violence" class="csl-entry">
 
 Blattman, Christopher. 2009. “From Violence to Voting: War and Political
@@ -241,14 +236,6 @@ Integrity, National Mass Schooling, and Linguistic Commonality.”
 Dincecco, Mark, and Yuhua Wang. 2018. “Violent Conflict and Political
 Development over the Long Run: China Versus Europe.” *Annual Review of
 Political Science* 21 (1): 341–58.
-
-</div>
-
-<div id="ref-henn2025africa" class="csl-entry">
-
-Henn, Soeren J., and James A. Robinson. 2025. “Africa as a Success
-Story: Political Organization in Pre-Colonial Africa.”
-<https://www.nber.org/papers/w34546>.
 
 </div>
 

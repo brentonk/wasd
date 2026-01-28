@@ -104,6 +104,8 @@ I will tell you more about these at the appropriate times.
 All readings will be available on Brightspace.
 For each reading, I'll provide a reading guide with questions to help walk you through the reading and extract the most important information.
 
+**This syllabus has been updated to reflect the cancellation of the January 26 and 28 classes due to the ice storm.**
+
 | Topic | Date | Reading |
 |-------|------|---------|
 | Intro to the course | Mon Jan 5 | No readings |
@@ -114,22 +116,22 @@ For each reading, I'll provide a reading guide with questions to help walk you t
 | | Mon Jan 19 | *No class --- MLK Day* |
 | | | |
 | Territorial control | Wed Jan 21 | @tilly1990coercion, ch. 3 |
-| | Mon Jan 26 | @abramson2017economic |
-| | Wed Jan 28 | @thies2005war |
-| | Mon Feb 2 | @dincecco2018violent |
-| | Wed Feb 4 | @henn2025africa |
+| | Mon Jan 26 | *Cancelled* |
+| | Wed Jan 28 | *Cancelled* |
+| | Mon Feb 2 | @abramson2017economic |
+| | Wed Feb 4 | @thies2005war |
+| | Mon Feb 9 | @dincecco2018violent |
 | | | |
-| Raising revenue | Mon Feb 9 | @levi1988rule, ch. 2 |
-| | Wed Feb 11 | @karaman2013different |
-| | Fri Feb 13 | **Research proposal due** |
-| | Mon Feb 16 | @queralt2019war |
+| | Wed Feb 11 | Proposal writing workshop |
 | | | |
-| | Wed Feb 18 | Catch up/midterm review |
-| | Mon Feb 23 | **Midterm exam** |
+| Raising revenue | Mon Feb 16 | @levi1988rule, ch. 2 |
+| | Wed Feb 18 | @karaman2013different |
+| | Fri Feb 20 | **Research proposal due** |
+| | Mon Feb 23 | @queralt2019war |
 | | | |
 | Parliaments | Wed Feb 25 | @kenkel2023theory |
-| | Mon Mar 2 | @cox2023window |
-| | Wed Mar 4 | @becker2020wars |
+| | Mon Mar 2 | **Midterm exam** |
+| | Wed Mar 4 | @cox2023window |
 | | | |
 | | Mon Mar 9 | *No class --- spring break* |
 | | Wed Mar 11 | *No class --- spring break* |
