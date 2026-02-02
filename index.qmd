@@ -23,5 +23,6 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Wednesday, January 7 | [Sovereign states](slides/01-07_sovereign_states/01-07_sovereign_states.html){target="_blank"} |
 | Monday, January 12 and Wednesday, January 14 | [Roving and stationary bandits](slides/01-12_roving_vs_stationary/01-12_roving_vs_stationary.html){target="_blank"} |
 | Wednesday, January 21 | [How war made states in Europe](slides/01-21_war_made_states/01-21_war_made_states.html){target="_blank"} |
+| Monday, February 2 | [European states: From war or wheat?](slides/02-02_war_or_wheat/02-02_war_or_wheat.html){target="_blank"} |
 
 : {tbl-colwidths="[35, 65]"}

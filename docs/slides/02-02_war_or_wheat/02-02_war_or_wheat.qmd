@@ -1,0 +1,229 @@
+---
+title: "European states: From war or wheat?"
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    chalkboard: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-02-02
+---
+
+
+## Recap
+
+Way back before the ice storm, we talked about Tilly...
+
+1. Bargaining model of war
+   - Necessary condition: military balance out of whack w/ status quo
+   - Why bargaining fails: private information, shifting power, domestic politics
+
+2. Tilly's theory of European state development
+   - War makes states --- develop or die out
+   - Institutional developments persist into peace --- and increase the incentive for further war
+   - Commercial/capitalist states advantaged in both ends of process
+
+## Today's agenda
+
+Two ways to evaluate the war-made-states thesis
+
+1. The tempting-but-wrong way
+   - Look at biggest consolidated states
+   - See whether they fought a lot of wars
+
+2. The systematic approach --- Abramson 2017
+   - Collect systematic data on the European state system
+   - Look for patterns consistent w/ Tilly thesis
+     - Did states grow when war became more capital-intensive?
+     - Were bigger states more likely to survive?
+   - Competing hypothesis + evidence: urbanization drove the formation of --- mostly small --- states
+
+
+# Selective versus systematic approaches
+
+## War made the biggest states
+
+A seemingly natural way to evaluate the Tilly thesis
+
+- Look at the most successful consolidated territorial states
+- Examine the role of war in their development
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![France](france.jpg)
+:::
+
+::: {.column width="33%"}
+![UK](uk.jpg)
+:::
+
+::: {.column width="33%"}
+![Prussia/Germany](prussia.svg)
+:::
+
+::::
+
+## War and statebuilding in France
+
+:::: {.columns}
+
+::: {.column width="55%"}
+![](france.jpg)
+:::
+
+::: {.column width="45%"}
+1439 --- Hundred Years' War --- permanent establishment of land tax
+
+1620s--1640s --- Thirty Years' War --- Cardinal Richelieu fought noble influence on army, tore down their castles
+
+1650s--1710s --- Louis XIV --- constant wars, absolute rule
+
+1790s --- French Revolutionary Wars --- raising of mass army, rights/representation expanded
+:::
+
+::::
+
+## War and statebuilding in the UK
+
+:::: {.columns}
+
+::: {.column width="55%"}
+![](uk.jpg)
+:::
+
+::: {.column width="45%"}
+1330s--1450s --- Hundred Years' War --- tax increases like in France
+
+1642 --- English Civil War --- parliamentary rebellion against attempted absolutism
+
+1688 --- Glorious Revolution --- Dutch intervention establishes parliamentary supremacy
+
+1701--1815 --- various wars, mostly against France --- development of sophisticated revenue system, high borrowing capacity
+:::
+
+::::
+
+## War and statebuilding in Prussia/Germany
+
+:::: {.columns}
+
+::: {.column width="55%"}
+![](prussia.svg)
+:::
+
+::: {.column width="45%"}
+1640s--1680s --- tax-funded standing army established by the Great Elector
+
+1740s--1780s --- major expansion of Prussian territory under wars by Frederick the Great
+
+1806 --- war defeat led to major reforms in revenue raising, state bureaucracy, economy
+
+1860s--1870s --- wars vs Denmark, Austria, France --- unification of German Empire
+:::
+
+::::
+
+## Problems with this approach
+
+We just [selected on the dependent variable]{.alert}
+
+::: {.callout-note title="A metaphor"}
+In a small town, ten people die in the span of a week.
+The town doctor performs an autopsy on each of them, and finds that they all have the same chemical in their system.
+Should you avoid contact with that chemical?
+
+:::: {.fragment}
+Would your answer change if I told you the chemical was H<sub>2</sub>O?
+::::
+:::
+
+. . .
+
+If we want to know what makes a "winner," also need to examine the "losers"
+
+Abramson's approach: analyze patterns in **all** European states, even the ones barely anyone remembers nowadays
+
+## Predictions if war made the state
+
+Assume, momentarily, the classic argument is right
+
+What patterns should we expect to see in a systematic study?
+
+. . .
+
+1. When war becomes more capital intensive, bigger states should prevail
+   - 1400s--1600s: military revolution
+   - artillery $\leadsto$ bastion forts $\leadsto$ protracted sieges
+   - Forts and sieges both highly expensive
+
+. . .
+
+2. Larger states should be more likely to "survive" overall
+
+## Trends in state size
+
+![](fig1a.png){fig-align="center"}
+
+## Trends in state size {visibility="uncounted"}
+
+![](fig1b.png){fig-align="center"}
+
+## Patterns in state survival
+
+![](fig4.png){fig-align="center"}
+
+## The city belt
+
+![](city_belt.jpg){fig-align="center"}
+
+## The core versus the periphery
+
+![](fig5.png){fig-align="center"}
+
+## Urbanization and fragmentation: The correlation
+
+![](table1.png){fig-align="center"}
+
+## Urbanization and fragmentation: Causal argument
+
+Problem: Urbanization doesn't happen randomly
+
+- Can't rule out reverse causality, confounding variables
+
+. . .
+
+Pieces of the argument:
+
+- Need to be able to grow cereals (e.g. wheat) to sustain cities
+- Some places had a climate better suited to grow cereals
+- Climate unlikely to affect fragmentation except through urbanization
+
+. . .
+
+Statistical finding: Higher fragmentation in cereal-suitable locales
+
+. . .
+
+Interpretation: Urbanization caused fragmentation
+
+# Wrapping up
+
+## To do for next time
+
+Read the Thies article on war and statebuilding in Latin America
+
+- Guide to be posted later this evening
+
+Reminder --- office hours
+
+- Mine: Tuesday, 2:00--3:30, Commons 326
+- Seungho: Friday, 3:00--4:30, Commons 317
