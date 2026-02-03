@@ -1,0 +1,31 @@
+---
+title: "Thies 2005, 'War, Rivalry, and State Building in Latin America'"
+date: 2026-02-04
+---
+
+# Notes
+
+"Dyad" is international relations jargon for "pair of states."
+"MID" is an acronym for "militarized interstate dispute," a sort of catch-all term for interstate conflicts ranging from fishing disputes to full-scale wars, collected in [a long-running data project](https://correlatesofwar.org/data-sets/mids/).
+So when Thies writes "an enduring rivalry is a dyad that experiences six MIDs within a time period of at least 20 years," he means that a pair of states has an enduring rivalry if they experience at least six militarized disputes over a period of 20 years.
+
+That said, don't fret too much over the five different definitions of rivalries.
+Focus on the bigger conceptual picture.
+
+To be exceedingly polite about it, the statistical analysis here does not quite follow the best practices we'd employ in 2026.
+Pay attention to the statistical findings, but by no means should you treat them as the last word on the topic.
+
+
+# Questions
+
+In terms of the historical frequency, aims, and intensity of warfare, how does Latin America differ from Europe?
+
+On pages 452--455, Thies summarizes the prior consensus of scholarship on how Tilly's theory applies (or does not) to Latin America, then lays out his own approach.  What is the earlier consensus, where does Thies concur with it, and how does his theory differ?
+
+How does the role of debt in statebuilding differ between Latin America and Europe?
+
+What is a "rivalry" in Thies' analysis?  How does he expect an external rivalry to operate similarly to---and different from---outright warfare in terms of its effects on the statebuilding process?
+
+How does Thies measure statebuilding in his statistical analysis?  (Can you think of any caveats or downsides for the measure he uses?)
+
+What does Thies find about the effects of interstate and civil wars on statebuilding in Latin America?  What does he find about the effects of interstate *rivalries*, and how do those differ from his findings about war?
