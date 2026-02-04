@@ -12,7 +12,7 @@ author:
   - name: "Prof. Brenton Kenkel"
     email: brenton.kenkel@gmail.com
     affiliations: Vanderbilt University
-date: last-modified
+date: 2026-02-04
 ---
 
 ## Quarto setup {visibility="hidden"}
