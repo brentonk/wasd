@@ -1,0 +1,12 @@
+country,avg_tax_ratio,total_interstate_years_centeno,total_civil_years_centeno,total_interstate_years_cow,total_civil_years_cow,total_rivalry_years_enduring,total_rivalry_years_proto,total_rivalry_years_strategic,total_rivalry_years_interstate_i,total_rivalry_years_interstate_ii
+Argentina,0.09032831456627523,1,1,1,1,10,7,214,85,85
+Bolivia,0.10183262826034349,4,1,4,1,21,0,173,5,12
+Brazil,0.11109349502340997,4,0,2,1,0,4,86,0,66
+Chile,0.20075859630101248,0,0,0,1,10,13,223,120,97
+Colombia,0.0948257976087218,2,37,3,36,0,16,190,35,0
+Ecuador,0.11710132291301818,3,6,0,0,56,22,119,101,29
+Mexico,0.0911224518067798,0,17,0,18,0,14,24,28,0
+Paraguay,0.10874297493212544,4,3,4,3,21,0,39,0,0
+Peru,0.10089085483273287,5,11,0,11,94,49,198,166,9
+Uruguay,0.26006180972431636,0,1,0,1,0,7,0,0,0
+Venezuela,0.18290129117445836,0,1,0,3,0,21,155,0,0

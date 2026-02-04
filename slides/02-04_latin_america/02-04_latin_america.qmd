@@ -1,0 +1,565 @@
+---
+title: War and statebuilding in Latin America
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    chalkboard: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: last-modified
+---
+
+## Quarto setup {visibility="hidden"}
+
+```{r setup}
+#| echo: false
+#| message: false
+library("tidyverse")
+library("cowplot")
+library("ggrepel")
+library("sandwich")
+library("lmtest")
+library("modelsummary")
+library("slider")
+library("tidygraph")
+library("ggraph")
+
+country_year <- read_csv("country_year.csv")
+country_summary <- read_csv("country_summary.csv")
+dyad_rivalries <- read_csv("dyad_rivalries.csv")
+dyad_summaries <- read_csv("dyad_summaries.csv")
+```
+
+## Recap
+
+Warmaking and statemaking
+
+- Tilly's theory
+   - War makes states --- develop or die out
+   - Institutional developments persist into peace --- and increase the incentive for further war
+   - Commercial/capitalist states advantaged in both ends of process
+
+- Abramson's skeptical take
+   - States didn't grow when war became more capital-intensive
+   - Smaller states were more likely to survive
+   - Urbanization drove the formation of --- mostly small --- states
+
+## Today's agenda
+
+1. Latin America as a "hard case" for the theory
+2. Thies' alternative: rivalry (threat of war) as driver of statebuilding
+3. Reanalyzing the data on war, rivalry, and tax capacity
+
+
+# Theory
+
+## Generality of the war-and-statebuilding logic
+
+Reminder of the basic logic
+
+- Success in military competition requires troops and equipment
+- Troops and equipment cost money --- a lot of money
+- Large territorial states are best equipped to raise that money
+- ... and can use these tools to consolidate power internally too
+
+Theory came out of studying European history
+
+...but when you boil it down to these parts, none of it is Europe-specific
+
+## Problems for the Tilly story outside Europe
+
+Why the theory is plausible for Europe
+
+- Europeans fought lots of wars against each other
+- Sovereign, territorial states emerged relatively early in Europe
+
+But it's hard to see "war made the state" elsewhere
+
+- Interstate war has been much less common outside Europe
+- And yet sovereign territorial states came to dominate worldwide
+- Maybe European colonialism can explain *emergence* of territorial states, but not as much *persistence* in post-colonial era
+
+## Latin America as test case
+
+Latin America is a "hard case" for the non-European application of the theory
+
+Basic facts to contend with:
+
+1. Vast majority of region gained independence 1800s--1830s
+
+2. Major interstate wars have rarely occurred in the region
+
+| War                        | Years      | Belligerents                           | Deaths            |
+|----------------------------|------------|----------------------------------------|-------------------|
+| War of the Triple Alliance | 1864--1870 | Paraguay vs Argentina, Brazil, Uruguay | ~300,000--400,000 |
+| War of the Pacific         | 1879--1884 | Chile vs Bolivia, Peru                 | ~15,000--20,000   |
+| Chaco War                  | 1932--1935 | Bolivia vs Paraguay                    | ~90,000--100,000  |
+
+3. Borders have barely changed since independence movements
+
+## Stability of Latin American borders
+
+:::: {.columns}
+::: {.column width="50%"}
+![1830](latam_1830.jpg)
+:::
+::: {.column width="50%"}
+![present](latam_now.webp)
+:::
+::::
+
+## Thies' theory: Rivalry made the state
+
+Why is war important in Tilly's model?
+
+1. Impetus to raise revenue and become more efficient at coercion
+2. Prunes out political organizations that fall behind
+
+. . .
+
+The first of these should still operate under just the **threat** of war
+
+. . .
+
+Key concept for Thies: interstate **rivalry** as longstanding war threat
+
+- "enduring" rivalry: 6+ low-level conflicts in 20-year period
+- "strategic" rivalry: policymakers perceive rival as serious military threat
+
+Unlike war, rivalry varies a lot over space + time in Latin America
+
+## Not many wars in Latin America, 1900--2000
+
+```{r war-network}
+#| echo: false
+#| cache: true
+# Get all Latin American countries from country_summary
+latam_countries <- country_summary$country
+nodes <- tibble(name = latam_countries)
+
+# Parse dyads into from/to columns, filter to Latin American dyads only
+edges <- dyad_summaries |>
+  separate(dyad, into = c("from", "to"), sep = "-") |>
+  filter(from %in% latam_countries, to %in% latam_countries) |>
+  filter(war_years_cow > 0) |>
+  select(from, to, weight = war_years_cow)
+
+# Create graph
+graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+
+ggraph(graph, layout = "circle") +
+  geom_edge_link(aes(width = weight), alpha = 0.7, color = "firebrick") +
+  geom_node_point(size = 8, color = "steelblue") +
+  geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+  scale_edge_width(range = c(1, 5), name = "Years at War (COW)") +
+  theme_graph() +
+  theme(legend.position = "bottom")
+```
+
+## But many strategic rivalries, 1900--2000
+
+```{r rivalry-network}
+#| echo: false
+#| cache: true
+# Parse dyads into from/to columns, filter to Latin American dyads only
+edges_rivalry <- dyad_summaries |>
+  separate(dyad, into = c("from", "to"), sep = "-") |>
+  filter(from %in% latam_countries, to %in% latam_countries) |>
+  filter(rivalry_years_strategic > 0) |>
+  select(from, to, weight = rivalry_years_strategic)
+
+# Create graph
+graph_rivalry <- tbl_graph(nodes = nodes, edges = edges_rivalry, directed = FALSE)
+
+ggraph(graph_rivalry, layout = "circle") +
+  geom_edge_link(aes(width = weight), alpha = 0.7, color = "firebrick") +
+  geom_node_point(size = 8, color = "steelblue") +
+  geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+  scale_edge_width(range = c(1, 5), name = "Years of Strategic Rivalry") +
+  theme_graph() +
+  theme(legend.position = "bottom")
+```
+
+## (enduring rivalries are in between)
+
+```{r enduring-rivalry-network}
+#| echo: false
+#| cache: true
+# Parse dyads into from/to columns, filter to Latin American dyads only
+edges_enduring <- dyad_summaries |>
+  separate(dyad, into = c("from", "to"), sep = "-") |>
+  filter(from %in% latam_countries, to %in% latam_countries) |>
+  filter(rivalry_years_enduring > 0) |>
+  select(from, to, weight = rivalry_years_enduring)
+
+# Create graph
+graph_enduring <- tbl_graph(nodes = nodes, edges = edges_enduring, directed = FALSE)
+
+ggraph(graph_enduring, layout = "circle") +
+  geom_edge_link(aes(width = weight), alpha = 0.7, color = "firebrick") +
+  geom_node_point(size = 8, color = "steelblue") +
+  geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+  scale_edge_width(range = c(1, 5), name = "Years of Enduring Rivalry") +
+  theme_graph() +
+  theme(legend.position = "bottom")
+```
+
+## Thies' expectations
+
+1. Sustained external rivalry spurs statebuilding
+   - Provides impetus to raise revenue and become efficient
+   - Expect gradual increase in state capacity rather than sudden bursts
+
+. . .
+
+2. Internal conflict hurts statebuilding
+   - Undermines legitimacy of state
+   - Saps resources that would be used to build capacity
+
+. . .
+
+3. Interstate war doesn't help or hurt
+   - Key difference with medieval Europe: common access to debt finance
+   - Less need to raise revenue domestically
+   - (more on this in a couple weeks when we read Queralt)
+   
+
+# Data
+
+## Measuring statebuilding
+
+Thies collects annual data on South America, 1900--2000
+
+- didn't do Central America because some sociologist didn't either 🤷🏻‍♂️
+
+. . .
+
+Dependent variable: **tax ratio**
+
+- Annual tax revenue as a fraction of gross domestic product
+  - e.g.: `tax_ratio` for Argentina 1975 = 0.112
+  - means tax revenues were 11.2% of Argentina's economy
+- Proxy for the state's extractive capacity (success as a stationary bandit)
+
+. . .
+
+Implicit assumption: how much the state *actually* raises is proportional to how much it *can* raise
+
+## Redoing the data analysis here
+
+Sorry to say, this article is basically a disasterclass in how to not do statistics
+
+- No presentation of descriptive statistics, just complicated regressions
+- "Bad controls": variables possibly affected by the treatment
+  - Treatments = interstate war history, civil war history, rivalries
+  - Bad controls = democracy, debt, GDP, inflation, trade, agriculture (i.e., everything but the time trend)
+- Technical: poor measures of statistical error (no clustering by country)
+- Makes lots of causal claims using exclusively correlational evidence
+
+So I pulled the independent variables from the tables, reconstructed the tax ratio from [MOxLAD](https://moxlad.cienciassociales.edu.uy/), and redid the analysis how I like it
+
+## Interstate war and tax ratio
+
+```{r war-tax-scatter}
+#| echo: false
+#| cache: true
+ggplot(country_summary, aes(x = total_interstate_years_cow, y = avg_tax_ratio)) +
+  geom_point() +
+  geom_text_repel(aes(label = country), size = 5, seed = 123) +
+  labs(
+    x = "Years in Interstate Wars (COW)",
+    y = "Average Tax Ratio"
+  ) +
+  scale_y_continuous(limits = c(0, 0.3)) +
+  theme_cowplot()
+```
+
+## Civil war and tax ratio
+
+```{r civil-war-tax-scatter}
+#| echo: false
+#| cache: true
+ggplot(country_summary, aes(x = total_civil_years_cow, y = avg_tax_ratio)) +
+  geom_point() +
+  geom_text_repel(aes(label = country), size = 5, seed = 123) +
+  labs(
+    x = "Years in Civil Wars (COW)",
+    y = "Average Tax Ratio"
+  ) +
+  scale_y_continuous(limits = c(0, 0.3)) +
+  theme_cowplot()
+```
+
+## Strategic rivalries and tax ratio
+
+```{r rivalry-tax-scatter}
+#| echo: false
+#| cache: true
+rivalry_summary <- country_year |>
+  summarize(
+    avg_tax_ratio = mean(tax_ratio, na.rm = TRUE),
+    avg_strategic_rivalries = mean(rivalry_strategic, na.rm = TRUE),
+    .by = country
+  )
+
+ggplot(rivalry_summary, aes(x = avg_strategic_rivalries, y = avg_tax_ratio)) +
+  geom_point() +
+  geom_text_repel(aes(label = country), size = 5, seed = 123) +
+  labs(
+    x = "Average Strategic Rivalries per Year",
+    y = "Average Tax Ratio"
+  ) +
+  scale_y_continuous(limits = c(0, 0.3)) +
+  theme_cowplot()
+```
+
+## Did rivalry make the state in Argentina and Chile?
+
+```{r example-timeseries}
+#| echo: false
+#| cache: true
+example_countries <- country_year |>
+  filter(country %in% c("Argentina", "Chile"))
+
+# Scale factor for secondary axis
+scale_factor <- 0.3 / max(example_countries$rivalry_strategic, na.rm = TRUE)
+
+ggplot(example_countries, aes(x = year)) +
+  geom_col(aes(y = rivalry_strategic * scale_factor), fill = "steelblue", alpha = 0.5) +
+  geom_line(aes(y = tax_ratio), linewidth = 1) +
+  scale_y_continuous(
+    name = "Tax Ratio",
+    limits = c(0, 0.3),
+    sec.axis = sec_axis(~ . / scale_factor, name = "Strategic Rivalries")
+  ) +
+  labs(x = "Year") +
+  facet_wrap(~ country, ncol = 1) +
+  theme_cowplot() +
+  panel_border()
+```
+
+## What about the rest of Latin America?
+
+```{r other-countries-timeseries}
+#| echo: false
+#| cache: true
+other_countries <- country_year |>
+  filter(!country %in% c("Argentina", "Chile"))
+
+# Global scale factor for secondary axis
+scale_factor <- 0.3 / max(other_countries$rivalry_strategic, na.rm = TRUE)
+
+ggplot(other_countries, aes(x = year)) +
+  geom_col(aes(y = rivalry_strategic * scale_factor), fill = "steelblue", alpha = 0.5) +
+  geom_line(aes(y = tax_ratio), linewidth = 0.5) +
+  scale_y_continuous(
+    name = "Tax Ratio",
+    limits = c(0, 0.3),
+    sec.axis = sec_axis(~ . / scale_factor, name = "Strategic Rivalries")
+  ) +
+  labs(x = "Year") +
+  facet_wrap(~ country, ncol = 3) +
+  theme_cowplot(font_size = 10) +
+  panel_border()
+```
+
+## Tax ratio compared to regional average
+
+```{r example-demeaned-timeseries}
+#| echo: false
+#| cache: true
+country_year_demeaned <- country_year |>
+  mutate(
+    avg_tax_ratio_year = mean(tax_ratio, na.rm = TRUE),
+    tax_ratio_demeaned = tax_ratio - avg_tax_ratio_year,
+    .by = year
+  )
+
+example_demeaned <- country_year_demeaned |>
+  filter(country %in% c("Argentina", "Chile"))
+
+# Scale factor for secondary axis
+scale_factor <- max(abs(example_demeaned$tax_ratio_demeaned), na.rm = TRUE) / max(example_demeaned$rivalry_strategic, na.rm = TRUE)
+
+ggplot(example_demeaned, aes(x = year)) +
+  geom_col(aes(y = rivalry_strategic * scale_factor), fill = "steelblue", alpha = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
+  geom_line(aes(y = tax_ratio_demeaned), linewidth = 1) +
+  scale_y_continuous(
+    name = "Tax Ratio (Relative to Average)",
+    sec.axis = sec_axis(~ . / scale_factor, name = "Strategic Rivalries")
+  ) +
+  labs(x = "Year") +
+  facet_wrap(~ country, ncol = 1) +
+  theme_cowplot() +
+  panel_border()
+```
+
+## Tax ratio compared to regional average
+
+```{r other-countries-demeaned-timeseries}
+#| echo: false
+#| cache: true
+other_countries_demeaned <- country_year_demeaned |>
+  filter(!country %in% c("Argentina", "Chile"))
+
+# Global scale factor for secondary axis
+scale_factor <- max(abs(other_countries_demeaned$tax_ratio_demeaned), na.rm = TRUE) / max(other_countries_demeaned$rivalry_strategic, na.rm = TRUE)
+
+ggplot(other_countries_demeaned, aes(x = year)) +
+  geom_col(aes(y = rivalry_strategic * scale_factor), fill = "steelblue", alpha = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
+  geom_line(aes(y = tax_ratio_demeaned), linewidth = 0.5) +
+  scale_y_continuous(
+    name = "Tax Ratio (Relative to Average)",
+    sec.axis = sec_axis(~ . / scale_factor, name = "Strategic Rivalries")
+  ) +
+  labs(x = "Year") +
+  facet_wrap(~ country, ncol = 3) +
+  theme_cowplot(font_size = 10) +
+  panel_border()
+```
+
+## Regression results (pooled)
+
+```{r regression-bootstrap}
+#| echo: false
+#| cache: true
+set.seed(42)
+
+# Create 10-year rolling sums for interstate and civil wars
+country_year_reg <- country_year |>
+  arrange(country, year) |>
+  mutate(
+    interstate_10yr = slide_dbl(interstate_ongoing_cow, sum, .before = 9, .complete = TRUE),
+    civil_10yr = slide_dbl(civil_ongoing_cow, sum, .before = 9, .complete = TRUE),
+    .by = country
+  ) |>
+  drop_na(interstate_10yr, civil_10yr)
+
+# Run regressions with cubic time trend
+m1 <- lm(tax_ratio ~ interstate_10yr + poly(year, 3, raw = TRUE), data = country_year_reg)
+m2 <- lm(tax_ratio ~ civil_10yr + poly(year, 3, raw = TRUE), data = country_year_reg)
+m3 <- lm(tax_ratio ~ rivalry_strategic + poly(year, 3, raw = TRUE), data = country_year_reg)
+m4 <- lm(tax_ratio ~ rivalry_enduring + poly(year, 3, raw = TRUE), data = country_year_reg)
+
+# Wild bootstrap vcov matrices (clustered by country)
+vcov1 <- vcovBS(m1, cluster = ~country, type = "wild", R = 999)
+vcov2 <- vcovBS(m2, cluster = ~country, type = "wild", R = 999)
+vcov3 <- vcovBS(m3, cluster = ~country, type = "wild", R = 999)
+vcov4 <- vcovBS(m4, cluster = ~country, type = "wild", R = 999)
+
+models <- list(
+  m1, m2, m3, m4
+)
+
+vcovs <- list(vcov1, vcov2, vcov3, vcov4)
+
+modelsummary(
+  models,
+  vcov = vcovs,
+  statistic = "SE = {std.error}<br>p = {p.value}",
+  stars = c('*' = .05),
+  coef_omit = "poly|Intercept",
+  coef_rename = c(
+    "interstate_10yr" = "Interstate wars (last 10 years)",
+    "civil_10yr" = "Civil wars (last 10 years)",
+    "rivalry_strategic" = "Strategic rivalries",
+    "rivalry_enduring" = "Enduring rivalries"
+  ),
+  gof_map = list(
+    list(raw = "nobs", clean = "Number of country-years", fmt = 0),
+    list(raw = "r.squared", clean = "R<sup>2</sup>", fmt = 3)
+  ),
+  notes = "p-values from wild bootstrap clustered by country (999 replications). All models include cubic time trend."
+) |>
+  tinytable::style_tt(i = c(2, 4, 6, 8), line = "b", line_width = 0.05, line_color = "gray")
+```
+
+## Regression results (country fixed effects)
+
+```{r regression-fe}
+#| echo: false
+#| cache: true
+set.seed(42)
+
+# Run regressions with cubic time trend and country fixed effects
+m1_fe <- lm(tax_ratio ~ interstate_10yr + poly(year, 3, raw = TRUE) + factor(country), data = country_year_reg)
+m2_fe <- lm(tax_ratio ~ civil_10yr + poly(year, 3, raw = TRUE) + factor(country), data = country_year_reg)
+m3_fe <- lm(tax_ratio ~ rivalry_strategic + poly(year, 3, raw = TRUE) + factor(country), data = country_year_reg)
+m4_fe <- lm(tax_ratio ~ rivalry_enduring + poly(year, 3, raw = TRUE) + factor(country), data = country_year_reg)
+
+# Wild bootstrap vcov matrices (clustered by country)
+vcov1_fe <- vcovBS(m1_fe, cluster = ~country, type = "wild", R = 999)
+vcov2_fe <- vcovBS(m2_fe, cluster = ~country, type = "wild", R = 999)
+vcov3_fe <- vcovBS(m3_fe, cluster = ~country, type = "wild", R = 999)
+vcov4_fe <- vcovBS(m4_fe, cluster = ~country, type = "wild", R = 999)
+
+models_fe <- list(
+  m1_fe, m2_fe, m3_fe, m4_fe
+)
+
+vcovs_fe <- list(vcov1_fe, vcov2_fe, vcov3_fe, vcov4_fe)
+
+modelsummary(
+  models_fe,
+  vcov = vcovs_fe,
+  statistic = "SE = {std.error}<br>p = {p.value}",
+  stars = c('*' = .05),
+  coef_omit = "poly|Intercept|factor",
+  coef_rename = c(
+    "interstate_10yr" = "Interstate wars (last 10 years)",
+    "civil_10yr" = "Civil wars (last 10 years)",
+    "rivalry_strategic" = "Strategic rivalries",
+    "rivalry_enduring" = "Enduring rivalries"
+  ),
+  gof_map = list(
+    list(raw = "nobs", clean = "Number of country-years", fmt = 0),
+    list(raw = "r.squared", clean = "R<sup>2</sup>", fmt = 3)
+  ),
+  notes = "p-values from wild bootstrap clustered by country (999 replications). All models include cubic time trend and country fixed effects."
+) |>
+  tinytable::style_tt(i = c(2, 4, 6, 8), line = "b", line_width = 0.05, line_color = "gray")
+```
+
+## Conclusions
+
+Both types of war negatively correlated with tax ratios
+
+Rivalry also negatively correlated with tax ratios
+
+No correlation robustly distinguishable from statistical noise
+
+"Eye test" doesn't suggest any particularly strong patterns either
+
+. . .
+
+**My conclusions:**
+
+- Whatever variation exists in Latin American tax ratios, it's hard to trace to actual war [or]{.underline} preparations for wars that didn't happen
+- Tilly is a much better guide to Europe (even if flawed) than to Latin America
+
+# Wrapping up
+
+## What we did today
+
+- Examined whether Tilly's bellicist theory travels outside Europe
+- Latin America: few interstate wars, stable borders, yet sovereign states persisted
+- Thies' alternative: interstate *rivalry* (threat of war) spurs statebuilding
+- Looked at the data: wars, rivalries, and tax ratios across South America 1900--2000
+- Found little robust evidence that war or rivalry drove state capacity in the region
+
+## Next time
+
+War and statebuilding in China
+
+- Dincecco and Wang 2018, "Violent Conflict and Political Development over the Long Run: China Versus Europe"
+- Reading guide to be posted by Friday
+
+Have a good weekend!
