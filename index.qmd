@@ -13,6 +13,7 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Wednesday, January 21 | [Tilly 1990, 'How War Made States, and Vice Versa'](guides/tilly1990coercion.html) |
 | Monday, January 26 | [Abramson 2017, 'The Economic Origins of the Territorial State'](guides/abramson2017economic.html) |
 | Wednesday, February 4 | [Thies 2005, 'War, Rivalry, and State Building in Latin America'](guides/thies2005war.html) |
+| Monday, February 9 | [Dincecco and Wang 2018, 'Violent Conflict and Political Development Over the Long Run: China versus Europe'](guides/dincecco2018violent.html) |
 
 : {tbl-colwidths="[35, 65]"}
 

@@ -1,0 +1,28 @@
+---
+title: "Dincecco and Wang 2018, 'Violent Conflict and Political Development Over the Long Run: China versus Europe'"
+date: 2026-02-09
+---
+
+# Notes
+
+You don't *need* to read the Model Appendix section on pages 353--355, but the math is not too hard and it might help you understand the theory.
+
+# Questions
+
+Comparing Europe to China, what are the key differences in (a) political organization and (b) the nature of warfare that Dincecco and Wang identify?
+
+Dincecco and Wang bring up the argument that economic growth, not warfare, is what spurs the development of political representation.
+They acknowledge that economic factors might explain differences in development *within* Europe, but reject the idea that they explain the differences *between* Europe and China.
+Why?
+
+What are the basic distinctions between "exit," "voice," and "loyalty" as elite responses to the ruler's demand for taxes?
+Why does this model predict that representation is particularly likely to emerge under conditions of political fragmentation?
+
+How did Europe differ from China in terms of the exit options available to elites?
+
+What differences do Dincecco and Wang find in the extractive capacity of European states versus China?
+
+What were the effects of warfare on political development in China, according to Dincecco and Wang?
+How did these differ from their effects in Europe?
+
+What do Dincecco and Wang conclude about the applicability of the warfare--political development relationship in other areas besides Europe and China?
