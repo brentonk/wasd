@@ -15,6 +15,7 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Wednesday, February 4 | [Thies 2005, 'War, Rivalry, and State Building in Latin America'](guides/thies2005war.html) |
 | Monday, February 9 | [Dincecco and Wang 2018, 'Violent Conflict and Political Development Over the Long Run: China versus Europe'](guides/dincecco2018violent.html) |
 | Monday, February 16 | [Levi 1988, *Of Rule and Revenue*](guides/levi1988rule.html) |
+| Wednesday, February 18 | [Karaman and Pamuk 2013, 'Different Paths to the Modern State in Europe'](guides/karaman2013different.html) |
 
 : {tbl-colwidths="[35, 65]"}
 

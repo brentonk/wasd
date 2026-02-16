@@ -1,0 +1,29 @@
+---
+title: "Karaman and Pamuk 2013, 'Different Paths to the Modern State in Europe'"
+date: 2026-02-18
+---
+
+## Notes
+
+As usual, don't get too caught up in the equations or the other nitty-gritty of the statistical analysis.  Focus on the *conclusions* that the authors draw from the statistics.
+
+Look back at the reading guide for [Sánchez de la Sierra](sanchez2020origins.html) if you need a refresher on how to read a table of regression results.
+
+When the authors refer to "endogeneity" here, they are referring to two possible problems for drawing causal inferences from a correlational analysis:
+
+1. Omitted confounders --- that some outside variable not included as a control might affect both the treatment (war, urbanization, regime) and the outcome (fiscal capacity).
+2. Reverse causality --- that the outcome (fiscal capacity) affects the treatment (war, urbanization, regime), rather than the other way around.
+
+## Questions
+
+Karaman and Pamuk focus on three key determinants of fiscal capacity: warfare, urbanization, and regime type.  What do they hypothesize about the *independent* impact of each of these variables?  Then, what do they hypothesize about them in *combination*?
+
+Why do Karaman and Pamuk choose 1800 as the end point for their analysis?
+
+What are the overall trends in *total* and *per capita* tax revenues between 1500 and 1800 in Europe?  How much does the trend vary from country to country?
+
+Karaman and Pamuk describe politics in their era of study as "primarily an intraelite game."  What does this mean, and why is this observation important for their theory about the determinants of state extractive capacity?
+
+Think about Hypotheses 3 vs. 4 in light of Figures 1 and 2.  (See Table 8 for the classification of regimes into authoritarian vs. representative.)  Just from glancing at the data, does either of these hypotheses seem more plausible than the other?
+
+Hypothesis 7 states the authors' main claim.  How do they arrive at this hypothesis?  How does it differ from Hypotheses 5 and 6?
