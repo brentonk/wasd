@@ -1,0 +1,28 @@
+---
+title: "Queralt 2019, 'War, International Finance, and Fiscal Capacity in the Long Run'"
+date: 2026-02-23
+---
+
+## Notes
+
+There's a mathematical model running through the section "A Political Economy of War Finance."  As always, you don't need to worry about the math-y bits if they're not helping your understanding.  You should still read the *words* in this section carefully, because it's where Queralt lays out the theory.
+
+The various apologia on pages 722--723 related to the usage of the "Wimmer and Min" data are unimportant for our purposes.  Just focus in broad terms on the time period covered and how Queralt measures his key dependent and independent variables.
+
+We'll focus on the main hypotheses and statistical analysis.  You can just skim the various robustness checks that are reported on pages 737--744.
+
+## Questions
+
+Why does Queralt say that the connection between war and state making was "broken" for states in the periphery that developed in the nineteenth century onward?
+
+Queralt explicitly takes issue with [Thies 2005](thies2005war.html)'s theory of war and state formation in Latin America.  What does he think Thies is missing?
+
+Queralt concludes that "war does not necessarily make states" under certain conditions.  What are those conditions?
+
+For a ruler deciding whether to finance a war through taxes or through debt, what are the major tradeoffs?  Why do different rulers choose different strategies?
+
+Similar to [Levi 1988](levi1988rule.html), the "time horizon" of rulers plays an important role in Queralt's theory.  Why is time horizon particularly important for the particular questions Queralt is studying?
+
+What does Queralt's statistical analysis say about the hypothesis that "war makes the state"?  To what extent does it matter whether the war takes place during a period when international credit is flowing?
+
+Queralt concludes that the effects of war participation on state building might have persisted because of their effects on power-sharing institutions.  Precisely what does he hypothesize about this causal chain, and what evidence does he find about it?
