@@ -1,0 +1,22 @@
+# Queralt lecture outline
+
+- Recap
+  - Levi on revenue and bargaining power
+  - Arguments for why war shifts bargaining power
+  - Karaman and Pamuk on Europe
+- War and taxes
+  - Re-show the revenue graphs
+  - ...but then also show a public debt graph
+- Debt finance and war
+  - Why demand for debt spikes
+  - Who can you borrow from?
+- Advantages of debt finance
+  - Politics
+  - Kicking the can down the road
+- Why not *always* finance with debt?
+  - Risk-adjusted interest rates
+  - Access to credit (endogenous: you've proven yourself a bad risk)
+  - Access to credit (exogenous: other economic crises have drained supply of credit)
+- Importance of the endogenous/exogenous distinction
+  - Could see more debt -> *more* statebuilding
+  - ...due to confounding variables
