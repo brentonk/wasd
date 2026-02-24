@@ -1,0 +1,28 @@
+---
+title: "Kenkel and Paine 2023, 'A Theory of External Wars and European Parliaments'"
+date: 2026-02-25
+---
+
+## Notes
+
+Yes, I am an author of this paper, but you should read it with the same critical eye that you read anything else in this course.
+
+As in some of the other papers we've read, there's a mathematical model here.
+And as always, I don't require you to understand all of the ins and outs of the math.
+That said, we wrote the model to be readable even for audiences without deep game theory training, so try and follow the math-y bits if you're interested.
+
+## Questions
+
+What is the ruler willingness constraint?  Why is ruler willingness a necessary condition for delegation of authority to a parliament?
+
+What is the elite willingness constraint?  Why is elite willingness a necessary condition for delegation of authority to a parliament?
+
+What is the elite credibility constraint?  Why is elite credibility a necessary condition for delegation of authority to a parliament?
+
+How does the strength of an external threat affect the ruler willingness constraint?
+
+How does the strength of an external threat affect the elite willingness and elite credibility constraints?  How (and why) do these effects differ depending on whether the elite's wealth is mobile or immobile?
+
+Kenkel and Paine conclude that sufficiently large external threats will undermine delegation to a parliament regardless of the source of the elite's wealth.  Why?
+
+How do Kenkel and Paine apply their theory to explain the patterns charted in Figure 10?
