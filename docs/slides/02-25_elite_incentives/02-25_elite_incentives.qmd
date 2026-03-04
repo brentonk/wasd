@@ -1,0 +1,27 @@
+---
+title: How war affects elite incentives
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    fig-align: center
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-02-25
+---
+
+
+## FYI
+
+In this class, we covered Kenkel and Paine's *IO* article "A Theory of External Wars and European Parliaments."
+
+Instead of giving a slide presentation, I walked through a sketch of our theoretical model --- the next slide contains the final product of that sketch.
+
+##
+
+![](kenkel_paine_model.png){fig-align="center"}
