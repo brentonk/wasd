@@ -1,0 +1,30 @@
+---
+title: "Acemoglu and Robinson 2000, 'Why Did the West Extend the Franchise?'"
+date: 2026-03-16
+---
+
+## Notes
+
+As always, you don't need to worry about the math.  Here's how I'd recommend approaching the technical sections of the paper:
+
+- Pages 1169--1171: This describes how the authors set up their model about democratization.  Read this part with an eye toward "How are the authors thinking about the democratization process?"  Don't get hung up on the notation or mathy details.
+- Pages 1172--1175: Skim or skip unless you find the math edifying.
+- Pages 1175--1177 ("There are two main conclusions..." through end of section): Read this part carefully, as this is where they describe the substantive importance of their mathematical results.
+- Pages 1177--1182 (Section III): Skim, focusing mainly on the implications for inequality discussed on 1180--1181.
+
+You should, of course, carefully read the introductory material (1167--1169) and the historical evidence (1182--1194) as you would any paper.
+
+The ["Kuznets curve"](https://en.wikipedia.org/wiki/Kuznets_curve) is repeatedly referenced.
+This is the idea that development first leads to a rise in inequality in a country, but then eventually leads to a decrease in inequality.
+
+## Questions
+
+What are the main historical patterns involving inequality, democratization, and redistribution that Acemoglu and Robinson are trying to explain?
+
+Acemoglu and Robinson claim that the *threat* of revolution may lead to democratization, even if a revolution does not actually take place.  What's the logic behind this claim?
+
+Another interesting implication of the theory is that democratization is *less* likely to occur when the poor are well-organized.  Why do the authors reach this conclusion?  Why do they think the development of the social welfare system in Germany is a good illustration of their point?
+
+Why, according to the authors, does high inequality make it harder for the elite to prevent a revolution without extending the franchise?  And why do they expect democratization to lead to a reduction in inequality?
+
+What alternative theories of democratization do Acemoglu and Robinson consider?  Why do they ultimately think the evidence best supports their theory over these alternatives?
