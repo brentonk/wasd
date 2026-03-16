@@ -39,5 +39,6 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Monday, February 23 | [Paying for war: Taxes versus debt](slides/02-23_taxes_vs_debt/02-23_taxes_vs_debt.html){target="_blank"} |
 | Wednesday, February 25 | [How war affects elite incentives](slides/02-25_elite_incentives/02-25_elite_incentives.html){target="_blank"} |
 | Wednesday, March 4 | [War, commerce, and the creation of parliaments](slides/03-04_parliamentary_creation/03-04_parliamentary_creation.html){target="_blank"} |
+| last-modified | [Democratization: The basics](slides/03-16_democratization/03-16_democratization.html){target="_blank"} |
 
 : {tbl-colwidths="[35, 65]"}
