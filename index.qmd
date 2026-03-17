@@ -20,6 +20,7 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Wednesday, February 25 | [Kenkel and Paine 2023, 'A Theory of External Wars and European Parliaments'](guides/kenkel2023theory.html) |
 | Wednesday, March 4 | [Cox, Dincecco, and Onorato 2023, 'Window of Opportunity: War and the Origins of Parliament'](guides/cox2023window.html) |
 | Monday, March 16 | [Acemoglu and Robinson 2000, 'Why Did the West Extend the Franchise?'](guides/acemoglu2000did.html) |
+| Wednesday, March 18 | [Przeworski 2008, 'Conquered or Granted? A History of Suffrage Extensions'](guides/przeworski2008conquered.html) |
 
 : {tbl-colwidths="[35, 65]"}
 

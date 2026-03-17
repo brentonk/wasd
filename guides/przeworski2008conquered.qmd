@@ -1,0 +1,35 @@
+---
+title: "Przeworski 2008, 'Conquered or Granted? A History of Suffrage Extensions'"
+date: 2026-03-18
+---
+
+## Notes
+
+Don't worry if you can't make sense of Table 1.
+I can't make sense of Table 1 either.
+
+## Questions
+
+Read through the four-step summary of "the generic argument" on the second page of the article.
+In what way is this argument similar to that of [Acemoglu and Robinson](acemoglu2000did.html), and in what ways does it differ?
+(Przeworski answers this directly in the next paragraph... but try to figure it out on your own first.)
+
+What are the main alternatives to the idea that elites grant the franchise to forestall an imminent revolt?
+What is the logic behind each alternative?
+
+In both the "conquered" and the "granted" stories, the extension of the franchise ultimately occurs due to the elite's calculation of its own self-interest.
+So then do these theories really differ?
+Why is it important to figure out which one is best supported by the data?
+
+Given the set of theories he is interested in testing, why does Przeworski think it's important to distinguish franchise extensions on *class* lines from those on *gender* lines?
+
+How does Przeworski operationalize/measure the key independent variable(s) in each theory of why the franchise is extended?
+(Is there anything you think these measurements might miss about the key underlying concepts?)
+
+Przeworski claims that the theoretical mechanism for *pre-war* franchise extensions must be fundamentally different than one that explains *post-war* extensions.
+Why?
+
+What do Przeworski's statistical findings show about the relationship between war and franchise extensions?
+
+What does Przeworski ultimately conclude about the set of theories he examines?
+Which ones find the most (and least) support in the data?
