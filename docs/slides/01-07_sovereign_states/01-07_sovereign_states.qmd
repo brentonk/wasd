@@ -1,0 +1,272 @@
+---
+title: Sovereign states
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    chalkboard: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-01-07
+---
+
+
+## Today's agenda
+
+1. What is a sovereign state?
+2. What [isn't]{.underline} a sovereign state?
+3. Why did we end up with a world of sovereign states?
+
+
+# Sovereign states
+
+## We live in a world of sovereign states
+
+![](world_map_wikimedia.png)
+
+::: {.aside}
+Source: [Wikimedia](https://commons.wikimedia.org/wiki/File:Political_World_Map_(with_disputed_territories).png)
+:::
+
+## Rare exceptions to the rule
+
+::: {.columns}
+:::: {.column}
+![Palestine (BBC)](palestine.webp){width="80%"}
+
+![Taiwan (BBC)](taiwan.webp){width="80%"}
+::::
+:::: {.column}
+![Kashmir (Wikimedia)](kashmir.png)
+::::
+:::
+
+## It wasn't always like this
+
+::: {.columns}
+:::: {.column}
+Example --- the Duchy of Aquitaine
+
+Part of France, but English king was the duke by heredity
+
+English king's refusal to pay homage was a trigger for Hundred Years' War (1337--1453)
+
+Before and during the war, unclear whose word was law
+
+- Local lords took sides
+- Brigands and bandits ran free
+::::
+:::: {.column}
+![The Duchy of Aquitaine (Wikimedia)](aquitaine.jpg){width="80%"}
+::::
+:::  
+
+## Defining sovereign statehood
+
+::: {.columns}
+:::: {.column}
+![Max Weber (Wikimedia)](weber.jpg){width="75%"}
+::::
+:::: {.column}
+"A state is a human community that successfully claims the monopoly of the legitimate use of physical force within a given territory."<br>
+---Max Weber, *Politics as a Vocation*
+
+Key phrases here:
+
+  - Monopoly
+  - Legitimate
+  - Given territory
+::::
+:::
+
+## Double-checking the definition
+
+![United States (via the BBC, ironically)](united_states.webp)
+
+Does the United States successfully claim the monopoly of the legitimate use of physical force within a given territory?
+
+## Governments that aren't sovereign states
+
+Talk with the folks near you to come up with examples of governments past or present that:
+
+1. Claim a monopoly of the legitimate use of force, but not in a given territory
+2. Have a monopoly of force within a given territory, but it's not legitimate
+3. Can legitimately use force within a given territory, but it's not a monopoly
+
+
+# Alternatives to sovereign states
+
+## Empires --- no limiting principle
+
+::: {.columns}
+:::: {.column}
+![The Roman Empire over time (Wikimedia)](roman_empire.gif)
+::::
+:::: {.column}
+They monopolize force
+
+- At least at the core/center
+- Periphery more contested
+
+But no "given territory," and legitimacy is arguable
+::::
+:::
+
+## Feudalism --- who's in charge?
+
+::: {.columns}
+:::: {.column}
+Not the clear hierarchy you might have been told
+
+Overlapping and cross-cutting contractual, legal, commercial, and religious obligations
+
+Even a king wasn't truly in charge
+
+- Relied on nobles for military support --- loyalty not assured
+- Long-held rights and privileges hard to displace
+- Also had to answer to the pope
+::::
+:::: {.column}
+![France in 1477 (Wikimedia)](france_1477.svg)
+::::
+:::
+
+## Spruyt 1994
+
+::: {.columns}
+:::: {.column}
+![](spruyt_1994.png){width="70%"}
+::::
+:::: {.column}
+Late medieval Europe (roughly 1300s)
+
+Empire had mostly died out, and feudalism was unsustainable
+
+- More value than ever in trade
+- Yet no standard measures/money
+- And no clear line of authority
+
+Territorial states arose to meet these challenges --- **but so did other political organizations**
+
+So why did the state prevail?
+::::
+:::
+
+## Alternative 1: The city-league
+
+![The Hanseatic League (Wikimedia)](hanseatic_league.jpg)
+
+Agreement among cities for mutual trade and defense
+
+Domestic politics/law still up to the individual city --- no central authority
+
+## Problems with city-leagues
+
+More standardization than under feudalism, but still incomplete
+
+Cities could "opt out" of obligations when convenient (free riding)
+
+- Defense ability not quite the sum of the parts
+- Hard to negotiate agreements with other political organizations
+
+Expanding membership posed threat to territorial states
+
+## Alternative 2: The city-state
+
+::: {.columns}
+:::: {.column}
+Mainly in northern Italy --- Venice, Florence, Genoa, etc
+
+Delimited territory, dominated by the main city with many outlying towns
+
+Not as centralized as a territorial state: smaller towns retained some autonomy
+
+Advantage over city-leagues: clear center of authority, able to make agreements with outsiders
+::::
+:::: {.column}
+![](city_states.png){width="75%" fig-align="center"}
+::::
+:::
+
+## Problems with city-states
+
+Similar to problems with city-leagues, but less severe
+
+Lesser towns often kept their own laws and standards
+
+Resentment of major city $\leadsto$ lesser towns not reliable for military defense
+
+Lasted longer than the Hanseatic League, but still mostly died out
+
+- exceptions: Singapore, Monaco
+
+## Why did the territorial state win out?
+
+Spruyt focuses on a few key advantages
+
+. . .
+
+**Lower transaction costs.**
+
+- Sovereigns could impose uniform money/measures to ease trade
+- Outsiders knew exactly who they had to deal with
+
+. . .
+
+**More credible commitments.**
+
+- Clear lines of authority $\leadsto$ ability to make long-run promises
+
+. . .
+
+**Less free-riding.**
+
+- Nobles or cities that undermined the state would be sanctioned
+- Aids both international cooperation and military defense
+
+## What's left unexplained? (where does war come in?)
+
+Why did states become so large?
+Why do we have 200ish countries instead of 2,000 or 20,000?
+
+- We'll see warfare has a lot to do with this!
+
+. . .
+
+Why did state revenues, capacities, and functions increase so much?
+
+- Warfare has a lot to do with this too!
+
+. . .
+
+Why hasn't some other form of political organization emerged to displace territorial states?
+
+# Wrapping up
+
+## What we did today
+
+**Define state sovereignty.**
+Monopoly over the legitimate use of force in a given territory.
+
+**See political alternatives to sovereign, territorial states.**
+
+- Before territorial states emerged: empire, feudalism
+- Contemporaneous: city-leagues, city-states
+
+**Work through why territorial states prevailed.**
+Advantages in trade, diplomacy, and defense.
+
+## Next time
+
+We'll start to think about states, conflict, and ordinary people
+
+Key metaphor: the "stationary bandit"
+
+**Reading:** Olson 1993, "Dictatorship, Democracy, and Development"
+
+Reading quizzes will be graded starting next class!
