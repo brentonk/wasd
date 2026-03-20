@@ -1,0 +1,26 @@
+---
+title: "Blattman 2009, 'From Violence to Voting: War and Political Participation in Uganda'"
+date: 2026-03-23
+---
+
+## Questions
+
+What are the competing theories about the relationship between violent activity and later political participation that Blattman is trying to resolve?
+
+What is it about the Ugandan conflict in particular that allows Blattman to draw inferences about the *causal* relationship between violence and voting?
+
+How did LRA raiders decide whom to abduct?
+Why is this important for Blattman's analysis?
+
+In Table 2, Blattman reports differences in early-life characteristics between abducted and non-abducted youth, as well as between militia members and non-members.
+What is the point of this analysis?
+
+What is the key independent variable in Blattman's causal analysis?
+What are the key dependent variables, and what concepts are they supposed to measure?
+Looking at Table 3, what are the main conclusions of the analysis?
+
+After identifying a causal relationship between violence and political participation, Blattman tries to identify *why* this relationship holds.
+What does he conclude about the causal mechanism that drives the effect?
+
+What alternative explanations for the effect does Blattman consider?
+Why does he ultimately find them less compelling?
