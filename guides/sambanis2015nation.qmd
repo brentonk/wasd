@@ -1,0 +1,42 @@
+---
+title: "Sambanis, Skaperdas, Wohlforth 2015, 'Nation-Building through War'"
+date: 2026-03-30
+---
+
+## Notes
+
+Hopefully you can guess by now---you don't need to know the mathy bits for our purposes in this course.
+The key sections of the paper to focus on are:
+
+- The qualitative exposition of the argument on pages 279--282.
+- The summary of the formal model results on pages 284--285 (starting with "In sum, when we add...").
+- The introduction to the Franco-Prussian war on pages 285--286.
+- The full case study of the Franco-Prussian war on pages 289--292.
+- The conclusion on pages 292--293.
+
+Even within those sections, don't worry about the stuff pertaining to debates over "neorealism" and "the second image reversed."
+No serious scholar of international politics cares about neorealism anymore.
+Focus on the core substantive arguments about how war affects nationalism via status, and how that in turn influences the likelihood of war in the first place.
+
+## Questions
+
+Three key concepts in this article are "state power," "international status," and "social cohesion."
+What does each of these concepts mean?
+What are the key differences between them?
+What do the authors see as the main relationships among these concepts?
+
+In what sense do the authors claim that their theory is compatible with the "war made the state" argument, and in what senses do they claim to innovate on that argument?
+
+Some people think leaders use international war as a distraction from domestic problems, or even as a way to gain popularity by engendering a rally-round-the-flag effect.
+How does the theory in this article differ from this "diversionary war" theory?
+
+According to the authors, what are the domestic political consequences of victory or defeat in war?
+What happens to the extent of national identification, and to the degree of state capacity?
+
+Why can a country gain status even after *losing* a war?
+
+What are the conditions that create the most risk that a country will pursue "nation building through war," according to the authors?
+
+In what ways does the Franco-Prussian War provide evidence for the authors' theory?
+Why do they think their theory does a better job explaining the war than alternative explanations do?
+(FYI, if you're taking the process tracing route in your final project, I think the case study here provides a good model of how to undertake that type of analysis.)
