@@ -114,8 +114,7 @@ All readings will be available on Brightspace. For each reading, I’ll
 provide a reading guide with questions to help walk you through the
 reading and extract the most important information.
 
-**This syllabus has been updated to reflect the cancellation of the
-January 26 and 28 classes due to the ice storm.**
+**Revised syllabus, March 30, 2026.**
 
 | Topic | Date | Reading |
 |----|----|----|
@@ -154,15 +153,16 @@ January 26 and 28 classes due to the ice storm.**
 |  |  |  |
 | Nationalism | Wed Mar 25 | Anderson (1983), ch. 1-2 |
 |  | Mon Mar 30 | Sambanis, Skaperdas, and Wohlforth (2015) |
-|  | Wed Apr 1 | Rozenas, Schutte, and Zhukov (2017) |
-|  | Mon Apr 6 | Darden and Mylonas (2016) |
+|  | Wed Apr 1 | Darden and Mylonas (2016) |
 |  |  |  |
-| Bureaucracy | Wed Apr 8 | Brewer (1988), ch. 3-4 |
-|  | Mon Apr 13 | Voth and Xu (2022) |
+|  | Mon Apr 6 | Final paper consultations |
+|  | Wed Apr 8 | Final paper consultations |
+|  |  |  |
+| Bureaucracy | Mon Apr 13 | Brewer (1988), ch. 3-4 |
 |  | Wed Apr 15 | Chen (2023) |
 |  |  |  |
 |  | Fri Apr 17 | **Final research paper + revision memo due** |
-|  | Mon Apr 20 | Catch up/final review |
+|  | Mon Apr 20 | Final exam review |
 |  | Thur Apr 23 | **Final exam** |
 
 ## References
@@ -283,14 +283,6 @@ in the Long Run.” *International Organization* 73 (4): 713–53.
 
 </div>
 
-<div id="ref-rozenas2017political" class="csl-entry">
-
-Rozenas, Arturas, Sebastian Schutte, and Yuri Zhukov. 2017. “The
-Political Legacy of Violence: The Long-Term Impact of Stalin’s
-Repression in Ukraine.” *The Journal of Politics* 79 (4): 1147–61.
-
-</div>
-
 <div id="ref-sambanis2015nation" class="csl-entry">
 
 Sambanis, Nicholas, Stergios Skaperdas, and William C. Wohlforth. 2015.
@@ -326,14 +318,6 @@ America.” *American Journal of Political Science* 49 (3): 451–65.
 
 Tilly, Charles. 1990. *Coercion, Capital, and European States*.
 Blackwell.
-
-</div>
-
-<div id="ref-voth2022discretion" class="csl-entry">
-
-Voth, Joachim, and Guo Xu. 2022. “Discretion and Destruction:
-Promotions, Performance, and Patronage in the Royal Navy.”
-<http://guoxu.org/docs/DiscretionNavy_Nov20.pdf>.
 
 </div>
 

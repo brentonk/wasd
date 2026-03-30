@@ -1,0 +1,29 @@
+---
+title: Nation building and war
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    fig-align: center
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-03-30
+draft: true
+---
+
+
+## Recap
+
+## Today's agenda
+
+
+# Wrapping up
+
+## What we did today
+
+## To do for next time
