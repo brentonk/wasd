@@ -1,0 +1,28 @@
+---
+title: "Darden and Mylonas 2016, 'Threats to Territorial Integrity, National Mass Schooling, and Linguistic Commonality'"
+date: 2026-04-01
+---
+
+## Questions
+
+Why, according to Darden and Mylonas, do some states have a particularly strong interest in "nation-building"?
+In other words, what characteristics predict why some states have more incentive to nation-build, and others have less incentive to do so?
+
+Why do Darden and Mylonas take national schooling as an indicator of nation-building?
+
+- How does schooling connect to the sense of national identity from [Anderson](anderson1983imagined.html) and [Sambanis, Skaperdas, and Wohlforth](sambanis2015nation.html)?
+
+- Through what mechanisms does schooling increase social cohesion?
+
+- What are the alternatives to national schooling, and why are they assumed to result in lower social cohesion?
+
+Why do Darden and Mylonas use "linguistic commonality" as their dependent variable?
+What does Table 1 show about differences in linguistic commonality across regions?
+
+What are the most prominent alternative explanations for variation in linguistic commonality across regions?
+Why do Darden and Mylonas conclude that these alternatives are insufficient?
+
+We saw in [Thies](thies2005war.html) that Latin American countries faced fairly low levels of interstate war.
+So why do Darden and Mylonas still think it makes sense for Latin America to have ended up with such high linguistic commonality?
+
+How do the case studies of Indonesia, Congo/Zaire, and Zambia illustrate both the *predictions* and the *causal mechanisms* of Darden and Mylonas' theory?

@@ -141,7 +141,7 @@ reading and extract the most important information.
 |  |  |  |
 | Parliaments | Wed Feb 25 | Kenkel and Paine (2023) |
 |  | Mon Mar 2 | **Midterm exam** |
-|  | Wed Mar 4 | Cox, Dincecco, and Onorato (2023) |
+|  | Wed Mar 4 | Cox et al. (2023) |
 |  |  |  |
 |  | Mon Mar 9 | *No class — spring break* |
 |  | Wed Mar 11 | *No class — spring break* |
@@ -152,7 +152,7 @@ reading and extract the most important information.
 |  | Mon Mar 23 | Blattman (2009) |
 |  |  |  |
 | Nationalism | Wed Mar 25 | Anderson (1983), ch. 1-2 |
-|  | Mon Mar 30 | Sambanis, Skaperdas, and Wohlforth (2015) |
+|  | Mon Mar 30 | Sambanis et al. (2015) |
 |  | Wed Apr 1 | Darden and Mylonas (2016) |
 |  |  |  |
 |  | Mon Apr 6 | Final paper consultations |
@@ -167,8 +167,7 @@ reading and extract the most important information.
 
 ## References
 
-<div id="refs" class="references csl-bib-body hanging-indent"
-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-abramson2017economic" class="csl-entry">
 
