@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UT Libraries Access Error</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #bf5700; /* UT Austin burnt orange */
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #bf5700;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>University of Texas Libraries</strong>
+  </header>
+  <main>
+    <h1>Access Error</h1>
+    <p>We're sorry, but your request could not be completed due to automated traffic detection.</p>
+    <p>If you believe this is an error, please contact support and include the following ID:</p>
+    <p><strong>12279454057819435703</strong></p>
+    <p><a class="button" href="mailto:support@utexas-libraries.atlassian.net?subject=Bot Defense Support ID: %BOTDEFENSE.support_id%">Contact Support</a></p>
+  </main>
+  <footer>
+    &copy; The University of Texas at Austin Libraries
+  </footer>
+</body>
+</html>
