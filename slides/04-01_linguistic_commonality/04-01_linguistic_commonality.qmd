@@ -1,0 +1,396 @@
+---
+title: War threats and language
+subtitle: "PSCI 2227: War and State Development"
+format:
+  clean-revealjs:
+    echo: true
+    fig-align: center
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: "Prof. Brenton Kenkel"
+    email: brenton.kenkel@gmail.com
+    affiliations: Vanderbilt University
+date: 2026-04-01
+---
+
+## Setup {visibility="hidden"}
+
+```{r}
+#| label: setup
+#| echo: false
+#| message: false
+#| warning: false
+#| cache: false
+
+library(tidyverse)
+library(countrycode)
+
+dicl <- read_tsv("dicl.csv", show_col_types = FALSE)
+
+ling_common <- dicl |>
+  filter(iso3_i == iso3_j) |>
+  transmute(iso3 = iso3_i, country = country_i, cnl, csl, cal)
+
+map_regions <- tibble(region = unique(map_data("world")$region)) |>
+  mutate(iso3 = countrycode(region, "country.name", "iso3c", warn = FALSE))
+
+country_data <- map_regions |>
+  left_join(ling_common, by = "iso3")
+
+csl_fill <- scale_fill_manual(
+  name = "CSL",
+  values = c(
+    "< 0.5" = "#FFFFB2",
+    "0.5–0.75" = "#ABD0E6",
+    "0.75–1.0" = "#4A93C1",
+    "> 1.0" = "#08306B",
+    "Unavailable" = "white"
+  )
+)
+
+map_base <- map_data("world") |>
+  filter(region != "Antarctica") |>
+  left_join(country_data, by = "region") |>
+  mutate(
+    csl_bin = cut(
+      csl,
+      breaks = c(-Inf, 0.5, 0.75, 1.0, Inf),
+      labels = c("< 0.5", "0.5–0.75", "0.75–1.0", "> 1.0")
+    ) |> fct_na_value_to_level("Unavailable")
+  )
+```
+
+## Recap
+
+**Last time.** Nation-building through war (Sambanis, Skaperdas, Wohlforth).
+
+- Sub-national identities undermine state capacity
+- Victory in war $\rightarrow$ higher national status $\rightarrow$ more national identification
+- Rulers may start wars *because* of the nation-building payoff
+
+**Today.** Darden and Mylonas, "Threats to Territorial Integrity, National Mass Schooling, and Linguistic Commonality."
+
+- War isn't the only way to build a nation --- mass schooling is another
+- External threats drive the *decision* to invest in nation-building
+
+## Today's agenda
+
+1. The puzzle: why so much variation in linguistic commonality?
+2. Theory: external threats and incentives to nation-build
+3. Evidence: regional patterns and case studies
+
+
+# Theory
+
+## Linguistic commonality and nationalism
+
+Impossible to measure "nationalism" directly
+
+Shared language is a reasonable (though imperfect) proxy for social scientists
+
+Basic logic of focusing on language:
+
+- *Imagined community* --- people who've never met feel a shared fate
+- A common language is close to a prerequisite for this
+  - Shared media, shared literature, shared political discourse
+  - Hard to imagine community without communication
+- Anderson: spread of nationalism largely coincident w/ print media
+
+## Regional variation in linguistic commonality
+
+```{r}
+#| label: map-csl
+#| echo: false
+#| fig-width: 11
+#| fig-height: 6
+
+map_base |>
+  ggplot(aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = csl_bin), color = "gray30", linewidth = 0.1) +
+  csl_fill +
+  coord_fixed(1.3, ylim = c(-60, 85)) +
+  theme_void() +
+  labs(caption = "Source: DICL v2 (Gurevich et al., 2024) — Common Spoken Language index (L1 + L2)") +
+  theme(legend.position = "bottom")
+```
+
+## Non-strategic explanations
+
+**Initial diversity.**
+Does linguistic diversity now just reflect the linguistic diversity of the past?
+
+**Duration of rule.**
+Do you just need the same regime in place for a long time to produce linguistic commonality?
+
+**State capacity.**
+Do you need the state to have high extractive capacity in the first place to have a national language?
+
+## Problems with the non-strategic explanations
+
+**Initial diversity.**
+
+- Around 1300, virtually *all* regions had high linguistic diversity
+- Even European states were linguistically diverse until recently
+
+**Duration of rule.**
+
+- Long rule, low penetration of colonial language: Macau, Philippines
+- Short rule, high penetration of new language: Hebrew in Israel
+
+**State capacity.**
+
+- High capacity, low commonality: Canada, China
+- Low capacity, high commonality: Tanzania, Indonesia, Central America
+
+## Linguistic commonality as a strategic choice
+
+Darden and Mylonas: linguistic commonality results in part from **deliberate decisions** by states --- nation-building through national schooling
+
+Puzzle from the SSW perspective: why wouldn't *every* state do this?
+
+. . .
+
+Key insights:
+
+1. It's costly to set up a national education system
+2. The benefits vary depending on threat conditions
+   - High threat $\leadsto$ need to provide for national defense
+   - Low threat $\leadsto$ maybe better to tax less + ask less of public
+
+## Alternatives
+
+::: {.callout-note title="Discussion question"}
+We've seen two accounts of how a state can build nationalism:
+
+1. Sambanis et al: Victory on the battlefield
+2. Darden and Mylonas: National schooling
+
+What other mechanisms could the state use to build national sentiment?
+When would they be preferable to these?
+:::
+
+## The hypotheses
+
+**High external threat $\rightarrow$ mass national schooling $\rightarrow$ greater linguistic commonality**
+
+- States in competitive environments invest in nation-building
+- Produces durable linguistic homogeneity
+
+**Low external threat $\rightarrow$ no incentive to nation-build $\rightarrow$ lower linguistic commonality**
+
+- Costs of nation-building more likely to outweigh benefits
+- Education left to missionaries, churches, or other non-state actors
+- Result: diverse educational systems, multiple languages
+
+
+# Evidence
+
+## Regional patterns
+
+```{r}
+#| label: regional-bar
+#| echo: false
+
+tibble(
+  region = c("Middle East, North Africa", "Europe", "Balkans", "East Asia",
+             "South America", "Former Soviet Union", "Central America\nand Caribbean",
+             "Southeast Asia", "South Asia", "Sub-Saharan Africa"),
+  pct = c(94, 93, 93, 91, 89, 86, 86, 74, 50, 45)
+) |>
+  mutate(region = fct_reorder(region, pct)) |>
+  ggplot(aes(x = pct, y = region)) +
+  geom_col(fill = "#4A93C1") +
+  geom_text(aes(label = paste0(pct, "%")), hjust = -0.2, size = 4.5) +
+  scale_x_continuous(limits = c(0, 105), expand = c(0, 0)) +
+  labs(
+    x = "Avg. % speaking dominant common language",
+    y = NULL,
+    caption = "Source: Darden and Mylonas (2016), Table 1"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+```
+
+## Regional patterns and the theory
+
+```{r}
+#| label: map-csl-2
+#| echo: false
+#| fig-width: 10
+#| fig-height: 5.5
+
+map_base |>
+  ggplot(aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = csl_bin), color = "gray30", linewidth = 0.1) +
+  csl_fill +
+  coord_fixed(1.3, ylim = c(-60, 85)) +
+  theme_void() +
+  labs(caption = "Source: DICL v2 (Gurevich et al., 2024) — Common Spoken Language index (L1 + L2)")
+```
+
+High commonality where there was high interstate competition (Europe, East Asia); low where borders were externally guaranteed (Sub-Saharan Africa)
+
+## Sub-Saharan Africa
+
+```{r}
+#| label: map-csl-ssa
+#| echo: false
+#| fig-width: 10
+#| fig-height: 5.5
+
+map_base |>
+  ggplot(aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = csl_bin), color = "gray30", linewidth = 0.1) +
+  csl_fill +
+  coord_fixed(1.3, xlim = c(-20, 55), ylim = c(-37, 20)) +
+  theme_void() +
+  labs(caption = "Source: DICL v2 (Gurevich et al., 2024) — Common Spoken Language index (L1 + L2)")
+```
+
+## Why Sub-Saharan Africa is so low
+
+The D&M explanation:
+
+- Treaty of Berlin (1884--85): Great Powers "froze" state borders
+- Post-colonial African elites colluded in 1964 to preserve existing borders
+- Result: near-absence of interstate war, boundary change, and external threat
+
+
+Without external threats, no strong incentive to nation-build
+
+- Education often left to missionaries --- who taught in *local* languages, not national ones
+- Multiple languages cultivated, reinforcing ethnic and regional identities
+- Colonial and post-colonial decisions to delegate schooling $\rightarrow$ linguistic heterogeneity
+
+## Case study: Indonesia (high threat)
+
+Indonesia at independence (1949):
+
+- 75.5 million people across 18,000 islands
+- 750+ languages spoken; most common (Javanese) was a minority language
+- Bahasa Indonesian --- the language of the nationalist movement --- spoken by under 5%
+- GDP per capita: \$803; literacy: 15--20%
+
+Not an obvious candidate for linguistic homogenization --- yet it happened
+
+## Indonesia's external threats
+
+**(a) Threat of military conquest**
+
+- Won independence through war against the Dutch and British
+- Borders remained contested; boundary disputes resolved by military action
+
+
+**(b) Threat of externally supported secession**
+
+- Dutch promoted "Pasundan" state (Balinese, Ambonese, Moluccan nationalism)
+- Japanese occupation had mobilized ethnic divisions
+- Cold War fears: links between ethnic Chinese and PRC; rivalry with Malaysia
+- Post-colonial meddling by former imperial powers
+
+## Indonesia's response: mass schooling in Indonesian
+
+Indonesia pursued nation-building through schools
+
+- 1950s: mass schooling and literacy campaign --- adult education, "people's libraries," thousands of new schools
+- Indonesian established as the sole national language of instruction (beyond Grade 3)
+- By 1952--53: 6.4 million of 12.3 million school-age children enrolled (52%)
+
+Results:
+
+- Literacy: 42.9% (1961) $\rightarrow$ 59.6% (1971) $\rightarrow$ 81.5% (1990) $\rightarrow$ 90%+ (2004)
+- By 2010: 88% of 237 million people were Indonesian speakers
+- Linguists describe an "epidemic language shift" --- Indonesian as a "killer language"
+
+## Difficulty: Southeast Asia
+
+```{r}
+#| label: map-csl-sa
+#| echo: false
+#| fig-width: 7
+#| fig-height: 5
+
+map_base |>
+  ggplot(aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = csl_bin), color = "gray30", linewidth = 0.1) +
+  csl_fill +
+  coord_fixed(1.3, xlim = c(60, 130), ylim = c(-10, 40)) +
+  theme_void() +
+  labs(caption = "DICL v2 — CSL (L1 + L2)")
+```
+
+What explains the variation within Southeast Asia?
+Is it *really* related to external threats?
+
+## Difficulty: Latin America
+
+::: {.columns}
+:::: {.column width="45%"}
+Why is Latin America uniformly high?
+
+- Borders have been very stable since the 1830s --- similar to Africa
+- Interstate war has been rare
+- Thies: variation *within* region in rivalry
+- Yet linguistic commonality is very high throughout the region
+::::
+:::: {.column width="55%"}
+```{r}
+#| label: map-csl-latam
+#| echo: false
+#| fig-width: 7
+#| fig-height: 5
+
+map_base |>
+  ggplot(aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = csl_bin), color = "gray30", linewidth = 0.1) +
+  csl_fill +
+  coord_fixed(1.3, xlim = c(-120, -30), ylim = c(-57, 35)) +
+  theme_void() +
+  labs(caption = "DICL v2 — CSL (L1 + L2)")
+```
+::::
+:::
+
+## Holding alternatives to a higher standard?
+
+**(c) D&M seem to hold their "alternative explanations" to a higher evidentiary standard than their own theory**
+
+Their argument structure:
+
+- Initial diversity "doesn't explain it" because Europe was diverse too
+  - But this is about *relative* levels --- some places *were* more diverse
+- State capacity "doesn't explain it" because weak states can homogenize
+  - But this doesn't mean capacity is *irrelevant*
+- Duration of rule "doesn't explain it" because of counterexamples
+  - But there are counterexamples to the threat theory too
+
+
+# Wrapping up
+
+## What we did today
+
+1. The puzzle: wide cross-national variation in linguistic commonality
+   - Can't be fully explained by initial diversity, state capacity, or duration of rule
+
+2. D&M's theory: external threats drive nation-building
+   - Threatened states invest in mass schooling with national content
+   - Secure states outsource education $\rightarrow$ persistent heterogeneity
+   - Mechanism: national schools
+
+3. Evidence
+   - Regional patterns align broadly with the theory
+   - Indonesia (high threat) vs. Congo/Zambia (low threat) as key comparison
+   - Some puzzles remain: Latin America, Southeast Asia
+
+## To do for next time
+
+**Reminder:** No lectures next week (Apr 6--8). Final paper consultations instead.
+
+<https://calendly.com/brenton-kenkel/wasd-paper-consultations>
+
+**Monday, Apr 13.** Read Brewer, *The Sinews of Power*.
