@@ -51,5 +51,6 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Wednesday, March 25 | [Nationalism](slides/03-25_nationalism_concept/03-25_nationalism_concept.html){target="_blank"} |
 | Monday, March 30 | [Nation building and war](slides/03-30_nation_building/03-30_nation_building.html){target="_blank"} |
 | Wednesday, April 1 | [War threats and language](slides/04-01_linguistic_commonality/04-01_linguistic_commonality.html){target="_blank"} |
+| Monday, April 13 | [Bureaucracy](slides/04-13_bureaucracy/04-13_bureaucracy.html){target="_blank"} |
 
 : {tbl-colwidths="[35, 65]"}
