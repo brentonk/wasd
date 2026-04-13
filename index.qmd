@@ -26,6 +26,7 @@ subtitle: "PSCI 2227, Spring 2026<br>Prof. Brenton Kenkel, Vanderbilt University
 | Monday, March 30 | [Sambanis, Skaperdas, Wohlforth 2015, 'Nation-Building through War'](guides/sambanis2015nation.html) |
 | Wednesday, April 1 | [Darden and Mylonas 2016, 'Threats to Territorial Integrity, National Mass Schooling, and Linguistic Commonality'](guides/darden2016threats.html) |
 | Monday, April 13 | [Brewer 1988, *The Sinews of Power*, chapters 3--4](guides/brewer1988sinews.html) |
+| Wednesday, April 15 | [Chen 2023, 'State Formation and Bureaucratization: Evidence from Pre-Imperial China'](guides/chen2023state.html) |
 
 : {tbl-colwidths="[35, 65]"}
 

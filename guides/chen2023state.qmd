@@ -1,0 +1,30 @@
+---
+title: "Chen 2023, 'State Formation and Bureaucratization: Evidence from Pre-Imperial China'"
+date: 2026-04-15
+---
+
+## Notes
+
+As always: no need to understand the mathematical equations, just make sure you understand the plain-language version of the theoretical argument and the evidence behind it.
+
+## Questions
+
+How do "fief" and "county" arrangements differ in terms of the principal-agent relationship between the central ruler (principal) and the local authority (agent)?
+
+Why does Chen predict that rulers are more likely to offer "fief" contracts when there is a need for defense against an external threat, compared to when the state plans to launch an offensive war?
+
+Why does Chen predict that local authorities will be more militarily aggressive under the "county" arrangement than under the "fief" arrangement?
+
+Why does Chen see pre-imperial China as a useful case to study to evaluate her theoretical argument?
+
+From the standpoint of the agent, what's the difference between an offensive war and a defensive war?
+i.e., what are the potential gains and losses from each type of war, and how do they differ?
+Furthermore, how do these gains and losses differ depending on whether the ruler has chosen a "fief" or "county" system?
+
+In her statistical analysis, how does Chen measure external threat strength?
+What does she find about the relationship between external threat strength and the extent of decentralization?
+
+How does Chen measure the aggressiveness of a district's military strategy?
+What does she find about the relationship between county-vs-fief organization and aggressiveness?
+
+What alternative explanations for these patterns does Chen consider, and why does she ultimately rule them out?
